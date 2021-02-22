@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://use.typekit.net/vzy4uba.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="activity7.2.css">
+</head>
+
+<body>
+	<nav class="topnav" id="myTopnav">
+	<div>
+		<img src="cease logo.png" width="50" height="50" id="logo" alt=""/>
+  <a href="public/index.html" target="new"><strong>Home</strong></a>
+  
+		<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn"><strong>My Account</strong> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="profile page.html" target="new"><i class="fa fa-user-circle" aria-hidden="true"></i><strong> My Profile</strong></a>
+      <a href="materials.html" target="new"><i class="fa fa-info-circle" aria-hidden="true"></i> <strong>My Materials</strong></a>
+      <a href="#" target="new"><i class="fa fa-comments" aria-hidden="true"></i> <strong>Discussion Board</strong></a>
+    </div>
+  </div> 
+</div>  	
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+	</nav>
+	<center><h3 style="font-family: feltro-normal, sans-serif; font-size:22px; color: #7E7979">Smoking is one way people deal with stressful situations.</h3><br><p style="font-size:17px;">If you can identify the cause of stress, you and your quit buddy, family, and friends can figure out better ways for you to deal with stress. </p> </center>
+	<br>
+	<form id="survey-form" action="activity7.2.html">
+		
+		<div class="tab">
+	<div class="form-group">
+			<br>
+			<em style="color:#005d9b; font-size: 20px;">Identify <strong>one</strong> cause of stress for yourself
+			</em>
+			<br>
+			<textarea style="background-color: white; font-size: 20px;" name="comments" class="form-control" id="comments1" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		<br>
+		<em style="color:#005d9b; font-size: 20px;">What are possible solutions for that stress that do not involve smoking?
+			</em>
+			<br>
+			<textarea style="background-color: white;font-size: 20px;" name="comments" class="form-control" id="comments2" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		</div>
+			
+		</div>
+		
+		<div class="tab">
+	<div class="form-group">
+			<br>
+		<em style="color:#005d9b; font-size: 20px;">Identify <strong>another</strong> cause of stress
+			</em>
+			<br>
+			<textarea style="background-color: white; font-size: 20px;" name="comments" class="form-control" id="comments3" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		<br>
+			<em style="color:#005d9b; font-size: 20px;">What are possible solutions for that stress?
+			</em>
+			<br>
+			<textarea style="background-color: white;font-size: 20px;" name="comments" class="form-control" id="comments4" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		
+	
+
+		</div>
+		</div>
+<div class="tab">
+	<div class="form-group">
+			<br>
+		<em style="color:#005d9b; font-size: 20px;">Identify <strong>another</strong> cause of stress
+			</em>
+			<br>
+			<textarea style="background-color: white; font-size: 20px;" name="comments" class="form-control" id="comments5" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		<br>
+			<em style="color:#005d9b; font-size: 20px;">What possible solutions can you think of to deal with that stress?
+			</em>
+			<br>
+			<textarea style="background-color: white;font-size: 20px;" name="comments" class="form-control" id="comments6" rows="3" cols="30" placeholder="Begin typing here..."></textarea>
+		
+	
+
+		</div>
+		</div>		
+		
+		
+		<div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)"> Next</button>
+	  
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+	 <span class="step"></span>
+	
+  </div>
+			
+	</form>
+		<br>
+</body>
+	<script src="activity6.1.js"></script>
+</html>

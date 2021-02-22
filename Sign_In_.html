@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Sign In </title>
+	<link rel="stylesheet" href="new login.css">
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Sign In ;
+		--web-view-id: Sign_In_;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Sign_In_;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Sign_In_ {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1400px;
+		height: 1993px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Sign In ;
+		--web-view-id: Sign_In_;
+		--web-enable-deep-linking: true;
+	}
+	.cease_logo {
+		position: absolute;
+		overflow: visible;
+		width: 136px;
+		height: 136px;
+		left: 130px;
+		top: 0px;
+	}
+	#HOME_ {
+		position: absolute;
+		left: 337px;
+		top: 68px;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(18,18,18,1);
+	}
+	#ABOUT {
+		position: absolute;
+		left: 497px;
+		top: 68px;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#TESTIMONIALS {
+		position: absolute;
+		left: 661px;
+		top: 68px;
+		overflow: visible;
+		width: 194px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#FAQ {
+		position: absolute;
+		left: 925px;
+		top: 68px;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#CONTACT_US {
+		position: absolute;
+		left: 1051px;
+		top: 68px;
+		overflow: visible;
+		width: 168px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	.DSC_0339_copy {
+		position: absolute;
+		overflow: visible;
+		width: 1402px;
+		height: 487px;
+		left: 0px;
+		top: 136px;
+	}
+	#SIGN_IN {
+		position: absolute;
+		left: 483px;
+		top: 379px;
+		overflow: visible;
+		width: 230px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 58px;
+		color: rgba(245,245,245,1);
+	}
+	.Rectangle_30 {
+		position: absolute;
+		overflow: visible;
+		width: 1401px;
+		height: 118px;
+		left: 0px;
+		top: 620px;
+	}
+	#Did_you_know__On_average__the_ {
+		position: absolute;
+		left: 134px;
+		top: 660px;
+		overflow: hidden;
+		width: 1141px;
+		height: 40px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_17 {
+		position: absolute;
+		width: 1400px;
+		height: 247px;
+		left: 0px;
+		top: 1748px;
+		overflow: visible;
+	}
+	.Rectangle_29 {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 247px;
+		left: 0px;
+		top: 0px;
+	}
+	#cease_logo_A5_Component_1 {
+		position: absolute;
+		width: 129px;
+		height: 129px;
+		left: 156px;
+		top: 42px;
+		overflow: visible;
+	}
+	.cease_logo_A5_Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 128px;
+		height: 128px;
+		left: 0px;
+		top: 0px;
+	}
+	#A {
+		position: absolute;
+		left: 325px;
+		top: 78px;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 59px;
+		margin-top: -7px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(210,58,90,1);
+	}
+	#A_MORGAN_STATE_UNIVERSITY_SPON {
+		position: absolute;
+		left: 156px;
+		top: 185px;
+		overflow: visible;
+		width: 487px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(255,255,255,1);
+	}
+	#QUICK_LINKS {
+		position: absolute;
+		left: 1040px;
+		top: 9px;
+		overflow: visible;
+		width: 202px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.08px;
+	}
+	#Home_About_Testimonials_Contac {
+		position: absolute;
+		left: 1088px;
+		top: 68px;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		line-height: 37px;
+		margin-top: -8px;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.08px;
+	}
+	#Group_36 {
+		position: absolute;
+		width: 1099px;
+		height: 883.947px;
+		left: 151px;
+		top: 767px;
+		overflow: visible;
+	}
+	.Path_1 {
+		overflow: visible;
+		position: absolute;
+		width: 1099px;
+		height: 883.947px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Button_ {
+		position: absolute;
+		width: 379.933px;
+		height: 89.877px;
+		left: 386.251px;
+		top: 682.803px;
+		overflow: visible;
+	}
+	#METADATA {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 14.618px;
+		height: 19.065px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	.Area__DISPLAY_ELEMENTS_Label__ {
+		position: absolute;
+		overflow: visible;
+		width: 379.933px;
+		height: 89.876px;
+		left: 0px;
+		top: 0px;
+	}
+	#Label {
+		position: absolute;
+		left: 149.794px;
+		top: 27.916px;
+		overflow: visible;
+		width: 71px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(255,255,255,1);
+	}
+	#Icon_ {
+		position: absolute;
+		width: 27.235px;
+		height: 38.129px;
+		left: 331.59px;
+		top: 25.874px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_14 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 0.681px;
+		overflow: hidden;
+		width: 14.618px;
+		height: 19.065px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_10 {
+		opacity: 0;
+	}
+	.Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 27.235px;
+		height: 38.129px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon {
+		position: absolute;
+		width: 23.639px;
+		height: 28.359px;
+		left: 1.52px;
+		top: 5.626px;
+		overflow: visible;
+	}
+	.Path {
+		overflow: visible;
+		position: absolute;
+		width: 25.306px;
+		height: 30.026px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Checkbox_ {
+		position: absolute;
+		width: 204.96px;
+		height: 59.918px;
+		left: 380.565px;
+		top: 575.256px;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_15 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 14.618px;
+		height: 19.065px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	.Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 43.576px;
+		height: 59.918px;
+		left: 0px;
+		top: 0px;
+	}
+	.Check__DISPLAY_ELEMENTS_Label_ {
+		overflow: visible;
+		position: absolute;
+		width: 18.709px;
+		height: 10.25px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,12.8751,22.7083) rotate(-45deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Label_A5_Text_16 {
+		position: absolute;
+		left: 61.96px;
+		top: 12.937px;
+		overflow: visible;
+		width: 144px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(61,61,61,1);
+	}
+	#Input_ {
+		position: absolute;
+		width: 379.933px;
+		height: 89.877px;
+		left: 386.251px;
+		top: 438.816px;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_17 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 14.618px;
+		height: 19.065px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	.Area__DISPLAY_ELEMENTS_Default {
+		position: absolute;
+		overflow: visible;
+		width: 379.933px;
+		height: 89.877px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value {
+		position: absolute;
+		left: 21.788px;
+		top: 27.916px;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(62,62,62,1);
+	}
+	#Icon__A5_Group_8 {
+		position: absolute;
+		width: 27.235px;
+		height: 38.129px;
+		left: 334.314px;
+		top: 27.916px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_19 {
+		display: none;
+		position: absolute;
+		left: -0.182px;
+		top: 0.853px;
+		overflow: hidden;
+		width: 14.57px;
+		height: 18.666px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_13 {
+		opacity: 0;
+	}
+	.Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 27.235px;
+		height: 38.129px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_A5_Group_9 {
+		position: absolute;
+		width: 20.355px;
+		height: 27.999px;
+		left: 3.211px;
+		top: 5.52px;
+		overflow: visible;
+	}
+	.Path_A5_Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 19.76px;
+		height: 26.554px;
+		left: 0px;
+		top: 0px;
+	}
+	.Line {
+		overflow: visible;
+		position: absolute;
+		width: 7.247px;
+		height: 9.094px;
+		left: 15.436px;
+		top: 21.232px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_A5_Text_20 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: -45.619px;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(61,61,61,1);
+		letter-spacing: 0.4px;
+	}
+	#Input__A5_Group_10 {
+		position: absolute;
+		width: 379.933px;
+		height: 88.515px;
+		left: 386.251px;
+		top: 318.645px;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_21 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: hidden;
+		width: 14.618px;
+		height: 19.065px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	.Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 379.933px;
+		height: 88.515px;
+		left: 0px;
+		top: 0px;
+	}
+	#Value_A5_Text_22 {
+		position: absolute;
+		left: 21.788px;
+		top: 27.236px;
+		overflow: visible;
+		width: 178px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(62,62,62,1);
+	}
+	#Icon__A5_Group_11 {
+		position: absolute;
+		width: 27.235px;
+		height: 37.449px;
+		left: 334.314px;
+		top: 27.917px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_A5_Text_23 {
+		display: none;
+		position: absolute;
+		left: -0.182px;
+		top: -0.135px;
+		overflow: hidden;
+		width: 14.57px;
+		height: 18.666px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_15 {
+		opacity: 0;
+	}
+	.Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 27.235px;
+		height: 37.448px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_A5_Group_12 {
+		position: absolute;
+		width: 20.355px;
+		height: 27.999px;
+		left: 3.211px;
+		top: 4.532px;
+		overflow: visible;
+	}
+	.Path_A5_Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 19.76px;
+		height: 26.554px;
+		left: 0px;
+		top: 0px;
+	}
+	.Line_A5_Line_2 {
+		overflow: visible;
+		position: absolute;
+		width: 7.247px;
+		height: 9.094px;
+		left: 15.436px;
+		top: 21.232px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_A5_Text_24 {
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: -46.981px;
+		overflow: visible;
+		width: 44px;
+		white-space: nowrap;
+		line-height: 22px;
+		margin-top: -3.5px;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(61,61,61,1);
+		letter-spacing: 0.4px;
+	}
+	#Create_an_account__TAG_A_ {
+		position: absolute;
+		left: 509.411px;
+		top: 218.974px;
+		overflow: visible;
+		width: 72px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(88,127,255,1);
+	}
+	#New_user___TAG_H6_ {
+		position: absolute;
+		left: 378.121px;
+		top: 218.974px;
+		overflow: visible;
+		width: 99px;
+		white-space: nowrap;
+		line-height: 31px;
+		margin-top: -6px;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		color: rgba(61,61,61,1);
+	}
+	#Title__TAG_H4_ {
+		position: absolute;
+		left: 379.305px;
+		top: 111.267px;
+		overflow: visible;
+		width: 146px;
+		white-space: nowrap;
+		line-height: 55px;
+		margin-top: -6.5px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 42px;
+		color: rgba(210,58,90,1);
+	}
+	#cease_logo_A5_Component_2 {
+		opacity: 0.415;
+		position: absolute;
+		width: 106px;
+		height: 106px;
+		left: 993px;
+		top: 0px;
+		overflow: visible;
+	}
+	.cease_logo_A5_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 106px;
+		height: 106px;
+		left: 0px;
+		top: 0px;
+	}
+</style>
+</head>
+<body>
+<div id="Sign_In_" class="">
+	<svg class="cease_logo">
+		<pattern elementId="cease_logo_A5_Rectangle_2" id="cease_logo_A5_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="cease_logo_A5_Rectangle_2_pattern.png" xlink:href="cease_logo_A5_Rectangle_2_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#cease_logo_A5_Rectangle_2_pattern)" id="cease_logo" rx="0" ry="0" x="0" y="0" width="136" height="136">
+		</rect>
+	</svg>
+	<div id="HOME_">
+		<a style="text-decoration: none; color: black;" href="index.html" target="new">HOME</a>
+	</div>
+	<div id="ABOUT">
+		<a  style="text-decoration: none; color: black;" href="about us1.html" target="new">ABOUT</a>
+	</div>
+	<div id="TESTIMONIALS">
+		<a style="text-decoration: none; color: black;" href="Testimonials.html" target="new">TESTIMONIALS</a>
+	</div>
+	<div id="FAQ">
+		<a style="text-decoration: none; color: black;" href="" target="new">FAQ</a>
+	</div>
+	<div id="CONTACT_US">
+		<a style="text-decoration: none; color: black;" href="Contact_Us_.html" target="new">CONTACT US</a>
+	</div>
+	<svg class="DSC_0339_copy">
+		<pattern elementId="DSC_0339_copy_A5_Rectangle_4" id="DSC_0339_copy_A5_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="DSC_0339_copy_A5_Rectangle_4_pattern.png" xlink:href="DSC_0339_copy_A5_Rectangle_4_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#DSC_0339_copy_A5_Rectangle_4_pattern)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="DSC_0339_copy" rx="0" ry="0" x="0" y="0" width="1402" height="487">
+		</rect>
+	</svg>
+	<div id="SIGN_IN">
+		<span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SIGN IN</span>
+	</div>
+	<svg class="Rectangle_30">
+		<rect fill="rgba(210,58,90,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_30" rx="0" ry="0" x="0" y="0" width="1401" height="118">
+		</rect>
+	</svg>
+	<div id="Did_you_know__On_average__the_">
+		<span>Did you know:</span><span style="font-style:normal;font-weight:normal;"> On average, the life expectancy of a smoker is 10 years less than a nonsmoker.</span>
+	</div>
+	<div id="Group_17">
+		<svg class="Rectangle_29">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_29" rx="0" ry="0" x="0" y="0" width="1400" height="247">
+			</rect>
+		</svg>
+		<div id="cease_logo_A5_Component_1" class="cease_logo">
+			<svg class="cease_logo_A5_Rectangle_7">
+				<pattern elementId="cease_logo_A5_Rectangle_8" id="cease_logo_A5_Rectangle_8_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="cease_logo_A5_Rectangle_8_pattern.png" xlink:href="cease_logo_A5_Rectangle_8_pattern.png"></image>
+				</pattern>
+				<rect fill="url(#cease_logo_A5_Rectangle_8_pattern)" id="cease_logo_A5_Rectangle_7" rx="0" ry="0" x="0" y="0" width="128" height="128">
+				</rect>
+			</svg>
+		</div>
+		<div id="A">
+			<span>A</span>
+		</div>
+		<div id="A_MORGAN_STATE_UNIVERSITY_SPON">
+			<span>A MORGAN STATE UNIVERSITY SPONSORED PROGRAM</span>
+		</div>
+		<div id="QUICK_LINKS">
+			<span>QUICK LINKS</span>
+		</div>
+		<div id="Home_About_Testimonials_Contac">
+			<span><a style="text-decoration: none; color:white;" href="index.html" target="new">Home</a><br/><a style="text-decoration: none; color:white;" href="about us1.html" target="new">About</a><br/><a style="text-decoration: none; color:white;" href="Testimonials.html" target="new">Testimonials</a><br/><a style="text-decoration: none; color:white;" href="Contact_Us_.html" target="new">Contact Us</a></span>
+		</div>
+	</div>
+	<div id="Group_36">
+	<!--	<svg class="Path_1" viewBox="0 0 1099 883.947">
+			<path fill="rgba(210,58,90,0.098)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Path_1" d="M 0 0 L 1099 0 L 1099 883.9467163085938 L 0 883.9467163085938 L 0 0 Z">
+			</path>
+</svg>
+		<div id="Button_">
+			<div id="METADATA">
+				<span>{"config":{},"type":"Button","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:23.271Z","nodeName":"Button"}</span>
+			</div>
+			<svg class="Area__DISPLAY_ELEMENTS_Label__">
+				<rect fill="rgba(210,58,90,1)" id="Area__DISPLAY_ELEMENTS_Label__" rx="0" ry="0" x="0" y="0" width="379.933" height="89.877">
+				</rect>
+			</svg>
+			
+			<div id="Icon_">
+				<div id="METADATA_A5_Text_14">
+					<span>{"config":{"STATE":"DEFAULT"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:23.082Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_10">
+					<rect fill="rgba(252,252,252,1)" id="Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_10" rx="0" ry="0" x="0" y="0" width="27.235" height="38.129">
+					</rect>
+				</svg>
+				<div id="Icon">
+					<svg class="Path" viewBox="1.29 2.499 23.639 28.359">
+						<path fill="rgba(0,0,0,0)" stroke="rgba(255,255,255,1)" stroke-width="1.6666666269302368px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path" d="M 23.10671234130859 5.006037712097168 C 20.67763519287109 1.662987232208252 16.73683738708496 1.662987232208252 14.30776309967041 5.006037712097168 L 13.10950946807861 6.654231071472168 L 11.9112548828125 5.006037712097168 C 9.48082447052002 1.662987232208252 5.542738437652588 1.662987232208252 3.112305879592896 5.006037712097168 C 0.6832312345504761 8.347222328186035 0.6832312345504761 13.76591300964355 3.112305879592896 17.10709762573242 L 4.311916351318359 18.75529098510742 L 13.10950946807861 30.85821723937988 L 21.90710258483887 18.75529098510742 L 23.10671234130859 17.10709762573242 C 25.53714370727539 13.76591300964355 25.53714370727539 8.347222328186035 23.10671234130859 5.006037712097168 Z">
+						</path>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="Checkbox_">
+			<div id="METADATA_A5_Text_15">
+				<span>{"config":{"STATE":"ACTIVE","DISPLAY_ELEMENTS":"Label"},"type":"Checkbox","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:24.312Z","nodeName":"Checkbox"}</span>
+			</div>
+			<svg class="Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_11">
+				<rect fill="rgba(242,242,242,1)" stroke="rgba(0,0,0,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Area__DISPLAY_ELEMENTS_Label___A5_Rectangle_11" rx="0" ry="0" x="0" y="0" width="43.577" height="59.918">
+				</rect>
+			</svg>
+		<!--	<svg class="Check__DISPLAY_ELEMENTS_Label_" viewBox="0 0 18.709 10.25">
+				<path fill="transparent" stroke="rgba(0,0,0,1)" stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Check__DISPLAY_ELEMENTS_Label_" d="M 1.620185732841492 0 L 0 10.24974822998047 L 18.70870971679688 7.292448997497559">
+				</path>
+			</svg>
+			
+		</div>
+		<div id="Input_">
+			<div id="METADATA_A5_Text_17">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:24.577Z","nodeName":"Input"}</span>
+			</div>
+			
+			
+			<div id="Icon__A5_Group_8">
+				<div id="METADATA_A5_Text_19">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:24.420Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_13">
+					<rect fill="rgba(253,73,198,0.349)" id="Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_13" rx="0" ry="0" x="0" y="0" width="27.235" height="38.129">
+					</rect>
+				</svg>
+				<div id="Icon_A5_Group_9">
+					<svg class="Path_A5_Ellipse_1">
+						<ellipse fill="rgba(0,0,0,0)" stroke="rgba(60,60,60,1)" stroke-width="1.6666666269302368px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_A5_Ellipse_1" rx="9.046833038330078" ry="12.443888664245605" cx="9.046833038330078" cy="12.443888664245605">
+						</ellipse>
+					</svg>
+					<svg class="Line" viewBox="0 0 4.919 6.766">
+						<path fill="transparent" stroke="rgba(60,60,60,1)" stroke-width="1.6666666269302368px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Line" d="M 4.919215202331543 6.766364574432373 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_A5_Text_20">
+				<span>Label</span>
+			</div>
+		</div>
+		<div id="Input__A5_Group_10">
+			<div id="METADATA_A5_Text_21">
+				<span>{"config":{},"type":"Input","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:25.007Z","nodeName":"Input"}</span>
+			</div>
+			
+			
+			<div id="Icon__A5_Group_11">
+				<div id="METADATA_A5_Text_23">
+					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:24.787Z","nodeName":"Icon"}</span>
+				</div>
+				<svg class="Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_15">
+					<rect fill="rgba(253,73,198,0.349)" id="Area__DISPLAY_ELEMENTS_Default_A5_Rectangle_15" rx="0" ry="0" x="0" y="0" width="27.235" height="37.449">
+					</rect>
+				</svg>
+				<div id="Icon_A5_Group_12">
+					<svg class="Path_A5_Ellipse_2">
+						<ellipse fill="rgba(0,0,0,0)" stroke="rgba(60,60,60,1)" stroke-width="1.6666666269302368px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Path_A5_Ellipse_2" rx="9.046833038330078" ry="12.443888664245605" cx="9.046833038330078" cy="12.443888664245605">
+						</ellipse>
+					</svg>
+					<svg class="Line_A5_Line_2" viewBox="0 0 4.919 6.766">
+						<path fill="transparent" stroke="rgba(60,60,60,1)" stroke-width="1.6666666269302368px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Line_A5_Line_2" d="M 4.919215202331543 6.766364574432373 L 0 0">
+						</path>
+					</svg>
+				</div>
+			</div>
+			<div id="Label_A5_Text_24">
+				<span>Label</span>
+			</div>
+		</div>-->
+		<div class="container">
+			<form>
+			<center><h1 style="color: #c52348; font-size: 60px; font-family: montserrat, sans-serif;font-weight: 700;font-style: normal; ">Sign In</h1>
+			</center><br><br>
+			
+   <h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; New user? &nbsp; &nbsp;<a style="text-decoration: none;" href="Sign_Up___1.html">Sign up</a></h3>
+    <hr>
+    <label for="nam"></label>
+    <input style="margin-left: 400px;" type="text" placeholder="Username or Email" name="nam" required id="myInput0">
+	  
+	  <br>
+			<label for="psw"></label>
+    <input style="margin-left: 400px;" type="password" placeholder="Password" name="psw" required id="myInput1"><br>
+			
+	 <p style="margin-left: 400px;"> <input style="width:20px; height:20px; " type="checkbox" onClick="showpassword()">
+	   &nbsp;Show Password</p> 
+	 <br>
+    <button style="margin-left: 400px;" type="submit" class="registerbtn" >Submit</button><br>
+			</form>  
+		
+		<div id="cease_logo_A5_Component_2" class="cease_logo">
+			<svg class="cease_logo_A5_Rectangle_16">
+				<pattern elementId="cease_logo_A5_Rectangle_17" id="cease_logo_A5_Rectangle_17_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="cease_logo_A5_Rectangle_17_pattern.png" xlink:href="cease_logo_A5_Rectangle_17_pattern.png"></image>
+				</pattern>
+				<rect fill="url(#cease_logo_A5_Rectangle_17_pattern)" id="cease_logo_A5_Rectangle_16" rx="0" ry="0" x="0" y="0" width="106" height="106">
+				</rect>
+			</svg>
+		</div>
+	</div>
+	</div>
+</div>
+</body>
+	<script src="new login.js"></script>
+</html>
