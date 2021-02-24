@@ -31,18 +31,31 @@ exports.verifyUnusedCode = functions.https.onCall((data, context) =>{
   });
 });
 
-exports.userSignUp = functions.auth.user().onCreate(user=>{
-  return admin.firestore().collection('users').doc('default').get().then(
+exports.userSignUp = functions.auth.user().onCreate((user)=>{
+  return db.collection('users').doc('default').get().then(
     (doc) => {
       var achievements = doc.data().badges;
-      admin.firestore().collection('users').doc(user.uid).set({
+      db.collection('users').doc(user.uid).set({
         email: user.email,
         badges: achievements,
       }, { merge: true });
     });
 });
 
-exports.userDeleted = functions.auth.user().onDelete(user=>{
-  const doc = admin.firestore().collection('users').doc(user.uid);
+exports.userCreateModuleDoc = functions.auth.user().onCreate((user)=>{
+  return db.collection('modules').doc('default').get().then(
+    (doc) => {
+      admin.firestore().collection('modules').doc(user.uid).create(doc.data());
+  })
+});
+
+exports.userDeleted = functions.auth.user().onDelete((user)=>{
+  const doc = db.collection('users').doc(user.uid);
   return doc.delete();
 });
+
+exports.userDeleteModulesDoc = functions.auth.user().onDelete((user)=>{
+  const doc = db.collection('modules').doc(user.uid);
+  return doc.delete();
+});
+
