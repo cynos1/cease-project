@@ -13,3 +13,15 @@ firebase.initializeApp({
   });
 
   const messaging = firebase.messaging();
+
+  messaging.onBackgroundMessage((payload) => {
+    console.log('[firebase-messaging-sw.js] Received background message ', payload);
+    // Customize notification here
+    const notificationTitle = 'CEASE Notification';
+    const notificationOptions = {
+      icon: '/cease logo.png'
+    };
+  
+    self.registration.showNotification(notificationTitle,
+      notificationOptions);
+  });

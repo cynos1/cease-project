@@ -3,10 +3,12 @@ WARNING: Illegal reflective access by io.netty.util.internal.ReflectionUtil (fil
 WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.ReflectionUtil
 WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
 WARNING: All illegal access operations will be denied in a future release
-19:38:08.918 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-19:38:09.077 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
-14:12:58.163 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
-14:12:58.176 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: cease-project
-14:12:58.186 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for cease-project
-14:12:58.187 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for cease-project
-14:12:58.193 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+17:16:10.827 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+17:16:10.965 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+14:19:06.738 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+14:19:06.747 [NamespaceSystem-akka.actor.default-dispatcher-7] INFO com.firebase.core.namespace.Terminator$Terminator - 2 actors left to terminate: cease-project-default-rtdb, cease-project
+14:19:06.755 [NamespaceSystem-akka.actor.default-dispatcher-9] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for cease-project
+14:19:06.755 [NamespaceSystem-akka.actor.default-dispatcher-8] INFO com.firebase.core.namespace.NamespaceActor - Stopping namespace actor for cease-project-default-rtdb
+14:19:06.756 [NamespaceSystem-akka.actor.default-dispatcher-9] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for cease-project
+14:19:06.756 [NamespaceSystem-akka.actor.default-dispatcher-8] INFO com.firebase.core.namespace.NamespaceActor - Gauges removed for cease-project-default-rtdb
+14:19:06.760 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.

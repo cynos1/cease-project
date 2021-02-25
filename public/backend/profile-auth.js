@@ -1,12 +1,8 @@
 const signupForm = document.querySelector("#CEASE-signup-form");
-
-const users = database.collection("users");
-const codes = database.collection("codes");
+const usernameExists = firebase.functions().httpsCallable('usernameExists');
 
 function authorizeAccount(){
     var UID = sessionStorage.getItem("UID");
-    
-    var usernameUsed = false;
 
     const userEmailPhone = document.getElementById("email/phone-textbox").value;
     const userName = document.getElementById("username-textbox").value;
@@ -26,8 +22,9 @@ function authorizeAccount(){
     }
 
     const return_func = async() =>{
-        let snapshot = await database.collection('users').where("username", "==", userName).get();
-        if (snapshot.docs.length){
+        let exists = await usernameExists({username: userName}).data;
+        console.log(exists);
+        if (exists){
             usernameWarningDiv.style.display = "block";
         }   
         else if (nonconfirmedPwd != confirmedPwd){
@@ -36,6 +33,7 @@ function authorizeAccount(){
         else{
             auth.createUserWithEmailAndPassword(userEmailPhone, confirmedPwd).then(
                 (userCredentials)=>{
+                    const users = database.collection("users");
                     var user = userCredentials.user;
                     user.updateProfile({displayName: userName});
                     user_created = true;
