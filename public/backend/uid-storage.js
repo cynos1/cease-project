@@ -11,7 +11,7 @@ function verifyUID(){
             if (result.data == true){
                 console.log("Valid Code");
                 sessionStorage.setItem("UID", userCode);
-                location.href='profile page.html';
+                location.href='Edit_Profile___1.html';
             }
             else{
                 incorrectpwd.style.display = "block";

@@ -836,18 +836,24 @@
 		
 		
 		<div class="container">
-			<form action="Edit_Profile___1.html">
+			<form onsubmit="verifyUID()">
 			<center><h1 style="color: #c52348; font-size: 60px; font-family: montserrat, sans-serif;font-weight: 700;font-style: normal; ">Sign Up</h1></center><br>
 			
    <h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Please enter your code</h3>
     <hr>
     <label for="psw"></label>
+	<div id="incorrectpwd" style="display: none;">
+		<p style="color: red">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Invalid code
+		</p>
+	</div>
     <input style="margin-left: 380px;" type="password" placeholder="Enter Code" name="psw" required id="myInput">
-	  
-	  <br>
-	 <p style="margin-left: 380px;"> <input style="width:20px; height:20px; " type="checkbox" onClick="showpassword()">
+	<br>
+	 	<p style="margin-left: 380px;"> <input style="width:20px; height:20px; " type="checkbox" onClick="showpassword()">
 	   &nbsp;Show Code</p> 
-	 <br>
+	<br>
     <button style="margin-left: 380px;" type="submit" class="registerbtn" >Submit</button><br>
 	   <a href="#" style="text-align: center; margin-left: 460px; text-decoration: none">I don't have a code</a>
 	  <!--<div class="loginpopup">
