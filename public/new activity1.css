@@ -5,6 +5,8 @@ body{
 	background-color: #fff;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	margin:0;
+	
+	height: auto;
 }
 main{
 	display: flex;
@@ -44,7 +46,7 @@ strong
 #frame
 {
 	max-width:620px;
-	max-height: 700px
+	max-height: 700px;
 	width:auto;
 	border:3px solid;
 	background:#fff;
@@ -129,6 +131,8 @@ p.pager
 .topnav {
   overflow: hidden;
   background-color: #C52348;
+ 
+	width: auto;
 }
 
 .topnav a {
@@ -237,21 +241,29 @@ p.pager
   display: -webkit-box;
   display: flex;
 }
-
+@viewport{
+	zoom:1.0;
+	width: extend-to-zoom;
+}
+@-ms-viewport{
+	width: extend-to-zoom;
+	zoom:1.0;
+}
 .site-main {
-  width: 75%;
+  width: 100%;
+	
 }
 
 .sidebar-area {
   background-color: #Fff4df;
   color: #c52348;
   position: relative;
-  width: 400px;
+  width: 300px;
   font-size: 20px;
 }
 
 .side-navigation.fixed {
-  position: fixed;
+ 
   top: 0;
   width: 300px;
 }
@@ -408,4 +420,11 @@ p.pager
     position: absolute;
     top:-40px;
     left:0;
+}
+@media screen and (min-width: 2560px){
+	
+	body{
+		width: 2560px;
+		height: auto;
+	}
 }
