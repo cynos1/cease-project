@@ -31,7 +31,7 @@ function myFunction() {
         },
 		{
             "question"      :   "Roof Top",
-            "image"         :   "images/Images for the app/roof2.jpg",
+            "image"         :   "roof1.jpg",
             "choices"       :   [
                                     "Yes",
                                     "No"
@@ -273,7 +273,7 @@ function init(){
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+                $(document.createElement('div')).attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px '}).appendTo('#frame');
             
                 setupButtons();
             }
@@ -295,7 +295,7 @@ $(function(){
           position: 'bottom'
         },
         {
-          element: '.progress',
+          element: '.progress1',
           intro: 'The "clock" symbol shows the present activity you are working on',
           position: 'bottom'
         },

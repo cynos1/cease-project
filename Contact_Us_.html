@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Contact Us </title>
 	
 <style id="applicationStylesheet" type="text/css">
@@ -932,6 +935,32 @@ input[type=text]:focus, input[type=password]:focus {
 .registerbtn:hover {
   opacity: 1;
 }
+	.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  font-weight: 900px;
+  transition: 0.4s;
+}
+	.group{
+		margin-top:1850px;
+	}
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
 </style>
 </head>
 <body>
@@ -1117,6 +1146,8 @@ input[type=text]:focus, input[type=password]:focus {
 				<span>Last Name</span>
 			</div>-->
 			
+			
+			
 			<div id="Icon__A2_Group_11">
 				<div id="METADATA_A2_Text_27">
 					<span>{"config":{"STATE":"DEFAULT","ICON":"Feather/Search"},"type":"Icon","theme":"Base","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:24.787Z","nodeName":"Icon"}</span>
@@ -1147,6 +1178,12 @@ input[type=text]:focus, input[type=password]:focus {
 		<div id="SEND">
 			<span>SEND</span>
 		</div>-->
+			
+			
+			
+			
+			
+			
 				<div id="container" style="margin-top: -100px;">
 			<form post >
 					
@@ -1199,9 +1236,48 @@ input[type=text]:focus, input[type=password]:focus {
 		<pattern elementId="Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21" id="Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21_pattern" x="0" y="0" width="100%" height="100%">
 			<image x="0" y="0" width="100%" height="100%" href="Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21_pattern.png" xlink:href="Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21_pattern.png"></image>
 		</pattern>
-		<rect fill="url(#Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21_pattern)" id="Screen_Shot_2021_01_27_at_6_34" rx="0" ry="0" x="0" y="0" width="1150" height="494">
-		</rect>
+		<!--<rect fill="url(#Screen_Shot_2021_01_27_at_6_34_A2_Rectangle_21_pattern)" id="Screen_Shot_2021_01_27_at_6_34" rx="0" ry="0" x="0" y="0" width="1150" height="494">
+		</rect>-->
 	</svg>
+	<div class="group">
+		<button class="accordion"><strong>+</strong> Section 1</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br>
+<button class="accordion"><strong>+</strong> Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br>
+<button class="accordion"><strong>+</strong> Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+	</div>       
+
+	
+	
+	 <script src="js/jquery-3.4.1.min.js"></script>
+	 <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 	</div>
 </body>
+	<link rel="stylesheet" href="FAQs.css">
 </html>

@@ -249,10 +249,10 @@ if (score >= 4){
              addChoices(quiz[0]['choices']);
 
              //add submit button
-             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
+             $(document.createElement('div')).attr('id', 'submitbutton').text('Check Answer').css({
                  'font-weight': 700,
                  'color': '#222',
-                 'padding': '30px 0'
+                 'padding': '30px '
              }).appendTo('#frame');
 
              setupButtons();

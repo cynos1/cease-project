@@ -105,6 +105,7 @@ ul, #myUL {
 #myUL {
   margin: 0 auto;
   padding: 10px;
+	
 }
 
 .caret {
@@ -249,7 +250,7 @@ span{
 .container .box .chart {
   position: relative;
   width: 50%;
-  height: 50%;
+  
   text-align: center;
   font-size: 40px;
   line-height: 190px;
@@ -380,19 +381,19 @@ span{
 .btn-gradient.blue:active 	  {background:#005d9b;}
 
 #This_course_is_a_practical_too {
-		position: absolute;
-		left: 156px;
-		top: 221px;
-		overflow: hidden;
-		width: 1089px;
-		height: 196px;
-		line-height: 46px;
-		margin-top: -3.5px;
-		text-align: center;
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 39px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.2px;
+    position: absolute;
+    left: 24px;
+    top: 987px;
+    overflow: hidden;
+    width: 1089px;
+    height: 196px;
+    line-height: 46px;
+    margin-top: -3.5px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 39px;
+    color: rgba(255,255,255,1);
+    letter-spacing: 0.2px;
 	}
