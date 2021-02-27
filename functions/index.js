@@ -11,6 +11,7 @@
 const functions = require('firebase-functions');
 //default reference
 const admin = require('firebase-admin');
+const { user } = require('firebase-functions/lib/providers/auth');
 // The Firebase Admin SDK to access Firestore.
 admin.initializeApp();
 const db = admin.firestore();
@@ -77,6 +78,32 @@ exports.userCreateModuleDoc = functions.auth.user().onCreate((user)=>{
   })
 });
 
+// Auto functions on changes.
+exports.updateBadgeInfo = functions.firestore.document('modules/{userId}').onUpdate((change, context) => {
+  // Get an object representing the document
+  // e.g. {'name': 'Marie', 'age': 66}
+  const uid = context.auth.uid;
+  return db.collection('users').doc(uid).get().then((doc)=>{
+    let userdoc = doc.data();
+    const newdoc = change.after.data();
+    
+    //module 1 specific tasks go here.
+    userdoc.badges[0].passed = newdoc.module_1.completed;
+
+    // module 2 specific tasks go here.
+    userdoc.badges[1].passed = newdoc.module_2.completed;
+
+    // module 3 specific tasks go here.
+    userdoc.badges[2].passed = newdoc.module_3.completed;
+
+    // multiple module tasks go here.
+    userdoc.badges[3].passed = newdoc.module_1.completed && newdoc.module_2.completed && newdoc.module_3.completed;
+
+
+    return db.collection('users').doc(uid).set(userdoc);
+  });
+
+});
 // Auto functions on deletion.
 exports.userDeleted = functions.auth.user().onDelete((user)=>{
   const doc = db.collection('users').doc(user.uid);
@@ -85,6 +112,14 @@ exports.userDeleted = functions.auth.user().onDelete((user)=>{
 
 exports.userDeleteModulesDoc = functions.auth.user().onDelete((user)=>{
   const doc = db.collection('modules').doc(user.uid);
+  return doc.delete();
+});
+
+exports.userDeleteToken = functions.auth.user().onDelete((user) =>{
+  const doc = db.collection('tokens').doc(user.uid);
+  if (doc.empty()){
+    return false;
+  }
   return doc.delete();
 });
 
