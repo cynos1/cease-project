@@ -16,14 +16,17 @@ $(function(){
   introguide.setOptions({
     steps: [
         {
-          element: '.logo',
+          element: '.cease_logo_A7_Rectangle_3',
           intro: 'Welcome to CEASE! Go through this quick tour to know your way around the website. Hint: Click here to return to the homepage.',
           position: 'bottom'
+			
+		
         },
         {
-          element: '#myUL',
+          element: '#Group_40',
           intro: 'You will have three modules to complete but lessons will become available as you progress. ',
-          position: 'bottom'
+          position: 'bottom',
+			color:'black'
         },
         {
           element: '.survey',
