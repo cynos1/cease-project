@@ -66,7 +66,7 @@
 <br>
     
   <span class="custom-dropdown big">
-    <select> 
+    <select id="relationship-type"> 
 		<option>Relationship</option>
         <option>My Spouse/Partner</option>
         <option>My Children/grandchildren</option>  
@@ -115,12 +115,33 @@
  <br>
 	<center><a href="new activity14.html"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-left"></i></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 <a href="congratsafterlesson4.html"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
+	 <a href="javascript:onButtonClick().then(()=>{location.href = 'congratsafterlesson4.html';});"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
 		
 	</div>
 		</main>
 	</div>
    
-</body>
+</body><script>
+	function onButtonClick(){
+		const name = document.getElementById('fname').value;
+		const relationship_index = document.getElementById("relationship-type").selectedIndex;
+		const relationship = document.getElementById('relationship-type')[relationship_index].text;
+		return sendAnswerToDatabaseA13(name, relationship).then(()=>{
+			return completeActivityOnDatabaseA13();
+		});
+	}
+	</script>
+	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
+	<!-- Include the core SDK first -->
+	<!-- include only the Firebase features as you need -->
+	<script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-database.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script type = 'text/javascript' src="backend/firebase.js"></script>
+	<script type = 'text/javascript' src="backend/activity.js"></script>
 	<script src="new activity13.js"></script>
 </html>

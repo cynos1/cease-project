@@ -63,7 +63,9 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    document.getElementById("survey-form").submit();
+    completeActivityOnDatabaseA16().then(()=>{
+      document.getElementById("survey-form").submit();
+    });
 	
     return false;
   }
