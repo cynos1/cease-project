@@ -188,10 +188,17 @@ function myFunction() {
             currentquestion++;
             $('#submitbutton').html('Submit &raquo;').on('click', function(){
                 if(currentquestion === quiz.length){
-					endQuiz();
+                    sendAnswerToDatabaseA1(currentquestion - 1, quiz[currentquestion - 1]['choices'][choice]).then(() =>{
+                        completeActivityOnDatabaseA1().then(() =>{
+                            endQuiz();
+                        });
+                    }); 
+					
 				} else {
                     $(this).text('Check Answer').css({'color':'#222'}).off('click');
-                    nextQuestion();
+                    sendAnswerToDatabaseA1(currentquestion - 1, quiz[currentquestion - 1]['choices'][choice]).then(() =>{
+                        nextQuestion();
+                    }); 
                 }
             })
 		}

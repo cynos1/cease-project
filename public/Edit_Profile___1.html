@@ -1126,20 +1126,26 @@
 			</div>
 		</div>-->
 		<div class="container">
-			<form action="readinesssurvey.html">
+			<form onsubmit="authorizeAccount()">
 			<center><h1 style="color: #c52348; font-size: 60px; font-family: montserrat, sans-serif;font-weight: 700;font-style: normal; ">Edit Profile Page</h1>
 			</center><br><br>
 			
    
     <hr>
     <label for="ema"></label>
-    <input style="margin-left: 400px;" type="text" placeholder="Email/phone" name="ema" required id="myInput0">
+	<div id="used-email-password" style="margin-left: 400px; display: none;">
+		<p style="color: red"> Email/Phone Number already in use!</p>
+	</div>
+    <input style="margin-left: 400px;" type="text" placeholder="Email/phone" name="ema" required id="email/phone-textbox" onfocus="hideWarningMessage('used-email-password')">
 				
-	<label for="user"></label>		
-	<input style="margin-left: 400px;" type="text" placeholder="Username" name="user" required id="myInput1">
+	<label for="user"></label>	
+	<div style="margin-left: 400px; display: none;" id="used-username">
+		<p style="color: red"> Username taken</p>
+	</div>	
+	<input style="margin-left: 400px;" type="text" placeholder="Username" name="user" required id="username-textbox" onfocus="hideWarningMessage('used-username')">
 	  
 	  <br>
-			<label for="psw"></label>
+	<label for="psw"></label>
     <input style="margin-left: 400px;" type="password" placeholder="Password" name="psw" required id="password"><br>
 			
 	<label for="psw"></label>
@@ -1165,18 +1171,28 @@
 </body>
 	<script>
 		var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
+  , confirm_password = document.getElementById("confirm_password"),
+  	email_phonenumber = document.getElementById("email/phone-textbox"),
+    username = document.getElementById("username-textbox");;
 
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
+	function validatePassword(){
+	if (password.value != confirm_password.value) {
+		confirm_password.setCustomValidity("Passwords Don't Match");
+		}else {
+			confirm_password.setCustomValidity('');
+		}
+	}
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;  
+
+	function hideWarningMessage(elementId){
+		var idElement = document.getElementById(elementId);
+
+		if (idElement.style.display == "block"){
+			idElement.style.display = "none";
+		}
+	}
 	</script>
 	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
 	<!-- Include the core SDK first -->

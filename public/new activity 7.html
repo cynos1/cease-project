@@ -117,7 +117,7 @@
 <!--	<button onClick="next()">next</button>-->
 			</section>
 			<br>
-			<center><a href="video2.html"> <i style="font-size:48px; color: #c52348" class="fa fa-arrow-circle-right"></i></a></center>
+			<center><a href="javascript:completeActivityOnDatabaseA7().then(()=>{location.href = 'video2.html';});"> <i style="font-size:48px; color: #c52348" class="fa fa-arrow-circle-right"></i></a></center>
 	
 	
         </main><!-- /.site-main -->
@@ -128,6 +128,17 @@
 
 
 </body>
-	
+  <script src="/__/firebase/8.2.7/firebase-app.js"></script>
+  <!-- Include the core SDK first -->
+  <!-- include only the Firebase features as you need -->
+  <script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+  <script src="/__/firebase/8.2.7/firebase-database.js"></script>
+  <script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+  <script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+  <script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+  <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script type = 'text/javascript' src="backend/firebase.js"></script>
+  <script type = 'text/javascript' src="backend/activity.js"></script>
 	<script src="new activity 7.js"></script>
 </html>

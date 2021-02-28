@@ -189,7 +189,7 @@
         </ul>
 
     </div>
-	<button class="btn-gradient red block" onclick="next()">Next</button>
+	<button class="btn-gradient red block" onclick="completeActivityOnDatabaseA2().then(()=>{next();});">Next</button>
 			
         </main><!-- /.site-main -->
 		
@@ -201,5 +201,17 @@
 </div>
 
 </body>
+	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
+    <!-- Include the core SDK first -->
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+    <script src="/__/firebase/8.2.7/firebase-database.js"></script>
+    <script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+    <script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+    <script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script type = 'text/javascript' src="backend/firebase.js"></script>
+    <script type = 'text/javascript' src="backend/activity.js"></script>
 	<script src="new activity 2.js"></script>
 </html>
