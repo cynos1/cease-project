@@ -82,7 +82,7 @@ exports.userCreateModuleDoc = functions.auth.user().onCreate((user)=>{
 exports.updateBadgeInfo = functions.firestore.document('modules/{userId}').onUpdate((change, context) => {
   // Get an object representing the document
   // e.g. {'name': 'Marie', 'age': 66}
-  const uid = context.auth.uid;
+  const uid = context.params.userId;
   return db.collection('users').doc(uid).get().then((doc)=>{
     let userdoc = doc.data();
     const newdoc = change.after.data();
@@ -100,7 +100,7 @@ exports.updateBadgeInfo = functions.firestore.document('modules/{userId}').onUpd
     userdoc.badges[3].passed = newdoc.module_1.completed && newdoc.module_2.completed && newdoc.module_3.completed;
 
 
-    return db.collection('users').doc(uid).set(userdoc);
+    return db.collection('users').doc(uid).set(userdoc, {merge: true});
   });
 
 });

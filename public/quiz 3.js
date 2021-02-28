@@ -143,12 +143,16 @@ var currentquestion = 0,
          currentquestion++;
          $('#submitbutton').html('Submit &raquo;').on('click', function () {
              if (currentquestion == quiz.length) {
-                 endQuiz();
+                sendAnswerToDatabaseQ3(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
+                    endQuiz();   
+                });
              } else {
                  $(this).text('Check Answer').css({
                      'color': '#222'
                  }).off('click');
-                 nextQuestion();
+                 sendAnswerToDatabaseQ3(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
+                    nextQuestion();
+                 });
              }
          })
      }

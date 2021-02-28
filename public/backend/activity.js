@@ -89,3 +89,36 @@ function completeActivityOnDatabaseA7(){
         return user_module_ref.set(user_module, {merge: true});
     });
 }
+
+function completeActivityOnDatabaseA8(){
+    const user = auth.currentUser;
+    const user_module_ref = database.collection("modules").doc(user.uid);
+
+    return user_module_ref.get().then((doc)=>{
+        let user_module = doc.data();
+        user_module.module_1.lesson_3.activity_8.completed = true;
+        return user_module_ref.set(user_module, {merge: true});
+    });
+}
+
+function completeActivityOnDatabaseA9(){
+    const user = auth.currentUser;
+    const user_module_ref = database.collection("modules").doc(user.uid);
+
+    return user_module_ref.get().then((doc)=>{
+        let user_module = doc.data();
+        user_module.module_1.lesson_3.activity_9.completed = true;
+        return user_module_ref.set(user_module, {merge: true});
+    });
+}
+
+function completeActivityOnDatabaseA10(){
+    const user = auth.currentUser;
+    const user_module_ref = database.collection("modules").doc(user.uid);
+
+    return user_module_ref.get().then((doc)=>{
+        let user_module = doc.data();
+        user_module.module_1.lesson_3.activity_10.completed = true;
+        return user_module_ref.set(user_module, {merge: true});
+    });
+}
