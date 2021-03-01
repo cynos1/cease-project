@@ -164,6 +164,8 @@ ul {
   text-align: center;
   align-items: center;
   display: flex;
+	
+ 
 }
 .bubble.menu.active {
   transform: scale(1.5) rotate(45deg);
