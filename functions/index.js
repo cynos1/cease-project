@@ -53,6 +53,18 @@ exports.usernameExists = functions.https.onCall((data, context) =>{
           });
 });
 
+exports.sendEmailThroughUsername = functions.https.onCall((data, context) =>{
+  return db.collection('users').where("username", "==", data.username)
+          .get()
+          .then((snapshot) =>{
+              if (snapshot.empty){
+                return '';
+              }else{
+                return snapshot.docs[0].data().email;
+              }
+      });
+});
+
 exports.sendToken = functions.https.onCall((data, context) => {
   const uid = context.auth.uid;
   const token = data.token;

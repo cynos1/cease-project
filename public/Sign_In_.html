@@ -907,17 +907,32 @@
 			</div>
 		</div>-->
 		<div class="container">
-			<form>
+			<form onsubmit= "signIn();">
 			<center><h1 style="color: #c52348; font-size: 60px; font-family: montserrat, sans-serif;font-weight: 700;font-style: normal; ">Sign In</h1>
 			</center><br><br>
 			
    <h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; New user? &nbsp; &nbsp;<a style="text-decoration: none;" href="Sign_Up___1.html">Sign up</a></h3>
     <hr>
     <label for="nam"></label>
-    <input style="margin-left: 400px;" type="text" placeholder="Username or Email" name="nam" required id="myInput0">
+	<div id="incorrectinfo" style="display: none;">
+		<p style="color: red">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Check email or password.
+		</p>
+	</div>
+	<div id="incorrectuser" style="display: none;">
+		<p style="color: red">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+			&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Wrong username or email.
+		</p>
+	</div>
+    <input style="margin-left: 400px;" type="text" placeholder="Username or Email" name="nam" required id="myInput0" onfocus="hideWarningMessage('incorrectinfo'); hideWarningMessage('incorrectuser');">
 	  
 	  <br>
 			<label for="psw"></label>
+
     <input style="margin-left: 400px;" type="password" placeholder="Password" name="psw" required id="myInput1"><br>
 			
 	 <p style="margin-left: 400px;"> <input style="width:20px; height:20px; " type="checkbox" onClick="showpassword()">
@@ -939,5 +954,26 @@
 	</div>
 </div>
 </body>
+<script>
+	function hideWarningMessage(elementId){
+		var idElement = document.getElementById(elementId);
+
+		if (idElement.style.display == "block"){
+			idElement.style.display = "none";
+		}
+	}
+</script>
+	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
+	<!-- Include the core SDK first -->
+	<!-- include only the Firebase features as you need -->
+	<script src="/__/firebase/8.2.7/firebase-auth.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-database.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-functions.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
+	<script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
+	<script src="/__/firebase/init.js"></script>
+	<script type = 'text/javascript' src="backend/firebase.js"></script>
+	<script type='text/javascript' src="backend/sign-in.js"></script>	
 	<script src="new login.js"></script>
 </html>
