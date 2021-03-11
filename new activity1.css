@@ -5,8 +5,6 @@ body{
 	background-color: #fff;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	margin:0;
-	
-	height: auto;
 }
 main{
 	display: flex;
@@ -46,7 +44,7 @@ strong
 #frame
 {
 	max-width:620px;
-	max-height: 1200px;
+	max-height: 700px
 	width:auto;
 	border:3px solid;
 	background:#fff;
@@ -86,24 +84,18 @@ p.pager
 }
 #choice-block
 {
-	display: block;
-	max-width: 700px;
-	width: 100%;
-	height: 50px;
+	display: flex;
+	width: 700px;
+	height: 60px;
 	border-radius: 50%;
 	text-align:center;
-	margin:60px -10px;
+	margin:10px -80px 10px;
+
 	
 	
-}
-@media (min-width: 576px) { 
-	 
 }
         #submitbutton
 {
-	width: 100%;
-	text-align: center;
-	margin:0 auto;
 	background:#c52348;
 }
         #submitbutton:hover
@@ -129,7 +121,7 @@ p.pager
 	-moz-border-radius: 5px;
 	border-radius: 5px; 
 	font-size:17px;
-	width:50%;
+	width:100px;
 	
 }
 	
@@ -137,8 +129,6 @@ p.pager
 .topnav {
   overflow: hidden;
   background-color: #C52348;
- 
-	width: auto;
 }
 
 .topnav a {
@@ -247,30 +237,21 @@ p.pager
   display: -webkit-box;
   display: flex;
 }
-@viewport{
-	zoom:1.0;
-	width: extend-to-zoom;
-}
-@-ms-viewport{
-	width: extend-to-zoom;
-	zoom:1.0;
-}
+
 .site-main {
-  width: 100%;
-	
+  width: 75%;
 }
 
 .sidebar-area {
   background-color: #Fff4df;
   color: #c52348;
   position: relative;
-  width: 300px;
+  width: 400px;
   font-size: 20px;
- 
 }
 
 .side-navigation.fixed {
- 
+  position: fixed;
   top: 0;
   width: 300px;
 }
@@ -427,11 +408,4 @@ p.pager
     position: absolute;
     top:-40px;
     left:0;
-}
-@media screen and (min-width: 320px){
-	
-	
-	.sidebar-area{
-		display:none;
-	}
 }
