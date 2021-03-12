@@ -148,17 +148,12 @@ var currentquestion = 0,
          currentquestion++;
          $('#submitbutton').html('Submit &raquo;').on('click', function () {
              if (currentquestion == quiz.length) {
-                sendAnswerToDatabaseQ1(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    endQuiz();   
-                });
-                 
+                 endQuiz();
              } else {
                  $(this).text('Check Answer').css({
                      'color': '#222'
                  }).off('click');
-                 sendAnswerToDatabaseQ1(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    nextQuestion();
-                 });
+                 nextQuestion();
              }
          })
      }
@@ -254,10 +249,10 @@ if (score >= 4){
              addChoices(quiz[0]['choices']);
 
              //add submit button
-             $(document.createElement('div')).attr('id', 'submitbutton').text('Check Answer').css({
+             $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({
                  'font-weight': 700,
                  'color': '#222',
-                 'padding': '30px '
+                 'padding': '30px 0'
              }).appendTo('#frame');
 
              setupButtons();

@@ -92,7 +92,7 @@
 	}
 	#FAQ {
 		position: absolute;
-		left: 925px;
+		left: 900px;
 		top: 68px;
 		overflow: visible;
 		width: 56px;
@@ -395,7 +395,7 @@
 		font-family: Montserrat;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 28px;
+		font-size: 30px;
 		color: rgba(16,16,16,1);
 	}
 	#Group_11 {
@@ -626,39 +626,30 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	[class*="col-"] {
-  width: 100%;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+
+.tooltip .tooltiptext {
+  background-color: black;
+  visibility: hidden;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 8px 2px;
+  width: 129px;
+  bottom: 100%;
+  margin-right: -99px;/* Use half of the width (120/2 = 60), to center the tooltip */
+	}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+	margin-bottom: 700px;
+	bottom: 100%;
+	text-align: center;
 }
 </style>
 </head>
@@ -691,7 +682,7 @@
 		<a style="text-decoration: none; color: black;" href="Contact_Us_.html" target="new">CONTACT US</a>
 	</div>
 	<div id="CONTACT_US" style="position: absolute;
-		left: 1190px;
+		left: 1150px;
 		top: 68px;
 		text-decoration: none;
 		overflow: visible;
@@ -703,7 +694,10 @@
 		font-weight: bold;
 		font-size: 25px;
 		">
-	<a href="" style="text-decoration: none; color:#c52348; ">BEGIN</a></div>
+		<div class="tooltip"><a href="" style="text-decoration: none; color:#c52348; ">BEGIN</a>
+			<span class="tooltiptext"><br>Click here to access the lessons.</span>
+		</div>
+	</div>
 	<div id="Ready_to_give_up_smoking_">
 		<span>Ready to live&nbsp; &nbsp;<br/>
 		healthier?</span>
@@ -795,7 +789,7 @@
 		</svg>
 	</div>
 	<div id="I_WANT_TO_QUIT">
-		<span>ABOUT QUITTING</span>
+		<a href="">ABOUT QUITTING</a>
 	</div>
 	<div id="I_AM_A_MENTOR">
 		<span>GETTING SUPPORT</span>
