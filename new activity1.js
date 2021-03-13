@@ -31,7 +31,7 @@ function myFunction() {
         },
 		{
             "question"      :   "Roof Top",
-            "image"         :   "roof1.jpg",
+            "image"         :   "images/Images for the app/roof2.jpg",
             "choices"       :   [
                                     "Yes",
                                     "No"
@@ -188,17 +188,10 @@ function myFunction() {
             currentquestion++;
             $('#submitbutton').html('Submit &raquo;').on('click', function(){
                 if(currentquestion === quiz.length){
-                    sendAnswerToDatabaseA1(currentquestion - 1, quiz[currentquestion - 1]['choices'][choice]).then(() =>{
-                        completeActivityOnDatabaseA1().then(() =>{
-                            endQuiz();
-                        });
-                    }); 
-					
+					endQuiz();
 				} else {
                     $(this).text('Check Answer').css({'color':'#222'}).off('click');
-                    sendAnswerToDatabaseA1(currentquestion - 1, quiz[currentquestion - 1]['choices'][choice]).then(() =>{
-                        nextQuestion();
-                    }); 
+                    nextQuestion();
                 }
             })
 		}
@@ -280,7 +273,7 @@ function init(){
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px '}).appendTo('#frame');
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Check Answer').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
             
                 setupButtons();
             }
@@ -302,7 +295,7 @@ $(function(){
           position: 'bottom'
         },
         {
-          element: '.progress1',
+          element: '.progress',
           intro: 'The "clock" symbol shows the present activity you are working on',
           position: 'bottom'
         },
