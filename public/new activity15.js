@@ -186,16 +186,10 @@ function myFunction() {
             currentquestion++;
             $('#submitbutton').html('SUBMIT &raquo;').on('click', function(){
                 if(currentquestion == quiz.length){
-                    sendAnswerToDatabaseA15(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                        completeActivityOnDatabaseA15().then(()=>{
-                           endQuiz(); 
-                        });
-                    });
+                    endQuiz(); 
                 } else {
                     $(this).text('Check Answer').css({'color':'#222'}).off('click');
-                    sendAnswerToDatabaseA15(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
                         nextQuestion();
-                    });
                 }
             })
         }

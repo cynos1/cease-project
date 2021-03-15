@@ -79,11 +79,7 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    HTMLtoDatabaseSurvey2().then(()=>{
-      document.getElementById("survey-form").submit();
-    });
-    
-	
+    document.getElementById("survey-form").submit();
     return false;
   }
 	else{

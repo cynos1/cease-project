@@ -115,7 +115,7 @@
  <br>
 	<center><a href="new activity14.html"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-left"></i></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 <a href="javascript:onButtonClick().then(()=>{location.href = 'congratsafterlesson4.html';});"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
+	 <a href="javascript:onButtonClick();"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
 		
 	</div>
 		</main>
@@ -125,9 +125,7 @@
 		const name = document.getElementById('fname').value;
 		const relationship_index = document.getElementById("relationship-type").selectedIndex;
 		const relationship = document.getElementById('relationship-type')[relationship_index].text;
-		return sendAnswerToDatabaseA13(name, relationship).then(()=>{
-			return completeActivityOnDatabaseA13();
-		});
+		location.href = 'congratsafterlesson4.html';
 	}
 	</script>
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
