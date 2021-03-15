@@ -90,9 +90,8 @@ function nextPrev(n) {
   // if you have reached the end of the form...
   if (currentTab >= x.length) {
     // ... the form gets submitted:
-    completeActivityOnDatabaseA17().then(()=>{
+
       document.getElementById("survey-form").submit();
-    });
     
     return false;
   }
