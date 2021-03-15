@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #fff;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	/*background-image: url("smoke2.jpg");*/
+	margin: 0px;
+	overflow-y: auto;
+}
+main{
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	user-select: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #005D9B;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color:#FFF4DF;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #005d9b;
+   color: white;
+   text-align: center;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+	color:#EFA82C;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+#logo{
+	float:left;
+}
+.content-area {
+  display: -webkit-box;
+  display: flex;
+}
+
+.site-main {
+  width: 75%;
+}
+
+.sidebar-area {
+  background-color: #Fff4df;
+  color: #005d9b;
+  position: relative;
+  width: 400px;
+  font-size: 20px;
+}
+
+.side-navigation.fixed {
+  position: fixed;
+  top: 0;
+  width: 300px;
+}
+.side-navigation.bottom {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  width: 300px;
+}
+.side-navigation .menu {
+  padding: 20px;
+  list-style-type: none;
+}
+.side-navigation .menu-item {
+  position: relative;
+}
+.side-navigation .menu-item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: #efa82c;
+  -webkit-transition: width .3s ease-in;
+  transition: width .3s ease-in;
+}
+.side-navigation .menu-item:hover:before {
+  width: 100%;
+}
+.side-navigation .menu-item a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 18px 50px;
+}
+
+
+
+
+
+.body {
+  --i: var(--wide, 1);
+  --j: calc(1 - var(--i));
+  --k: calc(1 - var(--narr, 0));
+  display: grid;
+ 
+  grid-gap: calc(var(--i)*2.25em + var(--j)*0.75em);
+  overflow-x: hidden;
+  min-height: 100vh;
+  font: 1em/ 1.25 open sans, sans-serif;
+  transition: .3s;
+}
+@media (max-width: 64em) {
+  body {
+    --wide: 0 ;
+  }
+}
+@media (max-width: 33.5em) {
+  body {
+    --narr: 1 ;
+  }
+}
+@media (max-width: 200px) {
+  body {
+    font-size: 0.75em;
+  }
+}
+
+article {
+  --p: var(--parity, 0);
+  --q: calc(1 - var(--p));
+  --s: calc(2*var(--p) - 1);
+  --art-w: calc(var(--k)*32em + var(--narr, 0)*100%);
+  display:grid;
+  grid-template: 1fr 2fr/calc(var(--k)*9em + var(--narr, 0)*3em) 1fr calc(var(--k)*3.25em);
+  place-self: center;
+  position: relative;
+  padding: .125em;
+  width: var(--art-w);
+  min-height: 9em;
+  border-radius: calc(var(--k)*9em);
+  box-shadow: 1em 1em 1.5em rgba(0, 0, 0, 0.15);
+  background: linear-gradient(90deg, #d4d4d4, #fff) content-box, linear-gradient(90deg, #fff, #d2d2d2);
+  counter-increment: idx;
+  transition: inherit;
+}
+article:before {
+  grid-row: 1/calc(2 + var(--k));
+  font-size: calc(var(--k)*6.75em + var(--narr, 0)*1.5em);
+  place-self: center;
+  color: var(--c);
+  text-shadow: 1px 1px 1px #000;
+  transition: inherit;
+  content: counter(idx,decimal-leading-zero);
+}
+article:after {
+  display: flex;
+  place-self: center;
+  align-items: center;
+  justify-content: center;
+  grid-row: 1/ span 2;
+  position: var(--wide, absolute);
+  top: calc(50% - 1em);
+  left: calc(var(--q)*(100% - 2em) - var(--s)*2.5em);
+  padding: .25rem;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  font-size: calc(var(--i)*5.625em + var(--j)*1em);
+  box-shadow: var(--wide, inherit);
+  background: var(--wide, linear-gradient(#ccc, #fff) content-box, linear-gradient(#fff, #d1d1d1));
+  transition: inherit;
+  content: var(--narr, attr());
+}
+article:nth-child(2n) {
+  --parity: 1 ;
+}
+article + article {
+  --fader: linear-gradient(90deg, red, transparent)
+  		0 0/ calc(32em - var(--j)*9em) 0.75em no-repeat
+  		,
+  ;
+}
+article:first-of-type, article:last-of-type {
+  --rounder: radial-gradient(at 100% 50%, transparent 70%, red 71%)
+  		0 var(--gy, 0)/ 0.375em 0.75em no-repeat
+  		,
+  ;
+}
+article:last-of-type {
+  --gy: 100% ;
+}
+
+span {
+  position: absolute;
+  z-index: -1;
+  top: calc(var(--i)*-1.5em - var(--j)*0.75em);
+  left: calc(var(--j)*4.5em);
+  border: solid 0.75em transparent;
+  border-left: none;
+  width: calc(32em - var(--j)*9em + calc(4.5em + (1 + var(--i))*0.75em));
+  height: calc(2*calc(4.5em + (1 + var(--i))*0.75em));
+  border-radius: 0 calc(4.5em + (1 + var(--i))*0.75em) calc(4.5em + (1 + var(--i))*0.75em) 0;
+  transform-origin: calc(16em - var(--j)*4.5em) 50%;
+  transform: scalex(calc(var(--k)*var(--s)));
+  background: conic-gradient(from -90deg, var(--slist)) border-box;
+  --m: var(--rounder, ) var(--fader, )
+  	linear-gradient(red, red) padding-box, linear-gradient(red, red) border-box;
+  -webkit-mask: var(--m);
+  -webkit-mask-composite: xor;
+  mask: var(--m);
+  mask-composite: exclusion;
+  transition: inherit;
+}
+
+h3 {
+  align-self: center;
+ 
+}
+
+p {
+  grid-row: 2/ 3;
+  grid-column: calc(1 + var(--k))/calc(2 + 2*var(--narr, 0));
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color:black;
+	background-color: #fff4df;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #005d9b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

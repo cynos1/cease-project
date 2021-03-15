@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#FFF4DF;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #C52348;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:#FFF4DF;
+  color: black;
+}
+
+#logo{
+	float:left;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #C52348;
+   color: white;
+   text-align: center;
+}
+
+
+
+
+
+
+.draggableList,
+.droppableList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.draggable {
+  width: 300px;
+  height: 110px;
+  border-radius: 50px;
+  text-align:center;
+  margin: 10px;
+}
+
+.drapCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  border: 1px solid silver;
+  margin: 0 auto;
+}
+
+.dropable {
+   /* border: 2px solid #c52348;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+    color: silver;
+    line-height: 100px;
+    letter-spacing: 2px;
+    list-style: none;
+    margin:10px;*/
+  border: 2px solid #c52348;
+  border-bottom:50px solid;
+  border-left:50px solid transparent;
+  border-right:50px solid transparent;
+  transform: scaleY(-1);
+  height:100px;
+  width:50px;
+  margin:5px;
+  text-align: center;
+  color:silver;
+  letter-spacing: 2px;
+}
+
+.feedback {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+.dropable header {
+  padding: 5px 0px 5px 0px;
+  border-bottom: 2px solid silver;
+}
+
+#draggableOne {
+  text-align:center;
+  background: #efa82c;
+}
+#draggableOnea {
+  text-align:center;
+  background: #efa82c;
+}
+
+#draggableTwo {
+  text-align:center;
+  background: #efa82c;
+}
+
+#draggableThree {
+  text-align:center;
+  background: #efa82c;
+}
+
+#draggableFour {
+  text-align:center;
+  background:#efa82c;
+}
+#draggableFive{
+  text-align:center;
+  background:#efa82c;
+}
+#draggableSix{
+  text-align:center;
+  background:#efa82c;
+ 
+}
+#draggableSeven{
+  text-align:center;
+  background:#efa82c;
+}
+.message {
+  color: green;
+  transition: 2s;
+}
+
+
+
+.colorChangered {
+  background:#c52348;
+  color:white;
+  border:2px solid #c52348;
+  transition: 2s;
+}
+
+.grow {
+  animation: grow 2s ease ;
+}
+@keyframes grow {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+.disappear {
+  display: none;
+}
+
+.bazang {
+  color: pink;
+  font-size: 6em;
+}
+
+.out-of-stock {
+  display: none;
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    display: table;
+	position: absolute;
+}
+.card1{
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    float: right;
+    display: table;
+	position: absolute;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 40px;
+}
+.column1 {
+  float: right;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.fa-check-circle{
+	font-family: "FontAwesome";
+	color: green;
+
+}

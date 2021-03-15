@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>homepage</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Home Page;
+		--web-view-id: Home_Page;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Home_Page;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Home_Page {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1400px;
+		height: 2773px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Home Page;
+		--web-view-id: Home_Page;
+		--web-enable-deep-linking: true;
+	}
+	.CeaseHome {
+		position: absolute;
+		overflow: visible;
+		width: 1403px;
+		height: 793px;
+		left: -3px;
+		top: 136px;
+	}
+	.cease_logo {
+		position: absolute;
+		overflow: visible;
+		width: 136px;
+		height: 136px;
+		left: 130px;
+		top: 0px;
+	}
+	#HOME_ {
+		position: absolute;
+		left: 337px;
+		top: 68px;
+		overflow: visible;
+		width: 90px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(18,18,18,1);
+	}
+	#ABOUT {
+		position: absolute;
+		left: 497px;
+		top: 68px;
+		overflow: visible;
+		width: 94px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#TESTIMONIALS {
+		position: absolute;
+		left: 661px;
+		top: 68px;
+		overflow: visible;
+		width: 194px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#FAQ {
+		position: absolute;
+		left: 925px;
+		top: 68px;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#CONTACT_US {
+		position: absolute;
+		left: 1051px;
+		top: 68px;
+		overflow: visible;
+		width: 168px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(11,11,11,1);
+	}
+	#Ready_to_give_up_smoking_ {
+		position: absolute;
+		left: 164px;
+		top: 391px;
+		overflow: visible;
+		width: 565px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 66px;
+		color: rgba(255,255,255,1);
+	}
+	#CEASE_Today_can_help_you_get_b {
+		position: absolute;
+		left: 164px;
+		top: 572px;
+		overflow: hidden;
+		width: 598px;
+		height: 95px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 118px;
+		left: 0px;
+		top: 919px;
+	}
+	#Did_you_know__On_average__the_ {
+		position: absolute;
+		left: 130px;
+		top: 959px;
+		overflow: hidden;
+		width: 1141px;
+		height: 40px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_1 {
+		position: absolute;
+		width: 1400px;
+		height: 532px;
+		left: 0px;
+		top: 1037px;
+		overflow: visible;
+	}
+	.ID2014_11_08_00_57_41_copy {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 532px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_3 {
+		opacity: 0.955;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 532px;
+		left: 0px;
+		top: 0px;
+	}
+	#We_are_a_community_driven__smo {
+		position: absolute;
+		left: 130px;
+		top: 1041px;
+		overflow: hidden;
+		width: 1141px;
+		height: 234px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		color: rgba(210,58,90,1);
+	}
+	#CEASE__Communities_Engaged_and {
+		position: absolute;
+		left: 130px;
+		top: 1292px;
+		overflow: hidden;
+		width: 1141px;
+		height: 201px;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+	#LEARN_MORE {
+		position: absolute;
+		left: 612px;
+		top: 1495px;
+		overflow: visible;
+		width: 177px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(197,35,72,1);
+	}
+	.DSC_0209_copy {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 339px;
+		left: 0px;
+		top: 1569px;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 176.006px;
+		height: 2px;
+		left: 612.5px;
+		top: 1527px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Communities_Engaged_and_Advoca {
+		position: absolute;
+		left: 322px;
+		top: 1727px;
+		overflow: visible;
+		width: 909px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	.cease_logo_A0_Rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 136px;
+		height: 136px;
+		left: 164px;
+		top: 1674px;
+	}
+	#Group_2 {
+		position: absolute;
+		width: 326px;
+		height: 316px;
+		left: 153px;
+		top: 1975px;
+		overflow: visible;
+	}
+	#Group_8 {
+		position: absolute;
+		width: 326px;
+		height: 316px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 326px;
+		height: 316px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_material_smoke_free {
+		overflow: visible;
+		position: absolute;
+		width: 190.332px;
+		height: 170.537px;
+		left: 66.236px;
+		top: 70.803px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_9 {
+		position: absolute;
+		width: 326px;
+		height: 316px;
+		left: 531px;
+		top: 1975px;
+		overflow: visible;
+	}
+	#Group_7 {
+		position: absolute;
+		width: 326px;
+		height: 316px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 326px;
+		height: 316px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_awesome_handshake {
+		overflow: visible;
+		position: absolute;
+		width: 192.803px;
+		height: 106.56px;
+		left: 66.979px;
+		top: 104.274px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_10 {
+		position: absolute;
+		width: 326px;
+		height: 316px;
+		left: 916px;
+		top: 1975px;
+		overflow: visible;
+	}
+	.Ellipse_3 {
+		position: absolute;
+		overflow: visible;
+		width: 326px;
+		height: 316px;
+		left: 0px;
+		top: 0px;
+	}
+	.Icon_awesome_chart_line {
+		overflow: visible;
+		position: absolute;
+		width: 170.026px;
+		height: 138.98px;
+		left: 77.704px;
+		top: 87.353px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#I_WANT_TO_QUIT {
+		position: absolute;
+		left: 190px;
+		top: 2316px;
+		overflow: visible;
+		width: 253px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(16,16,16,1);
+	}
+	#I_AM_A_MENTOR {
+		position: absolute;
+		left: 571px;
+		top: 2316px;
+		overflow: visible;
+		width: 247px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(16,16,16,1);
+	}
+	#I_AM_A_RESEARCHER {
+		position: absolute;
+		left: 929px;
+		top: 2315px;
+		overflow: visible;
+		width: 301px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		color: rgba(16,16,16,1);
+	}
+	#Group_11 {
+		position: absolute;
+		width: 191px;
+		height: 61px;
+		left: 221px;
+		top: 2372px;
+		overflow: visible;
+	}
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		height: 61px;
+		left: 0px;
+		top: 0px;
+	}
+	#SIGN_UP {
+		position: absolute;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_12 {
+		position: absolute;
+		width: 191px;
+		height: 61px;
+		left: 599px;
+		top: 2378px;
+		overflow: visible;
+	}
+	.Rectangle_4_A0_Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		height: 61px;
+		left: 0px;
+		top: 0px;
+	}
+	#SIGN_UP_A0_Text_17 {
+		position: absolute;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_13 {
+		position: absolute;
+		width: 191px;
+		height: 61px;
+		left: 599px;
+		top: 2378px;
+		overflow: visible;
+	}
+	.Rectangle_4_A0_Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		height: 61px;
+		left: 0px;
+		top: 0px;
+	}
+	#SIGN_UP_A0_Text_18 {
+		position: absolute;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_14 {
+		position: absolute;
+		width: 191px;
+		height: 61px;
+		left: 984px;
+		top: 2378px;
+		overflow: visible;
+	}
+	.Rectangle_4_A0_Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 191px;
+		height: 61px;
+		left: 0px;
+		top: 0px;
+	}
+	#SIGN_UP_A0_Text_19 {
+		position: absolute;
+		left: 41px;
+		top: 14px;
+		overflow: visible;
+		width: 111px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+	}
+	#Group_15 {
+		position: absolute;
+		width: 1400px;
+		height: 244px;
+		left: 0px;
+		top: 2533px;
+		overflow: visible;
+	}
+	.Rectangle_29 {
+		position: absolute;
+		overflow: visible;
+		width: 1400px;
+		height: 244px;
+		left: 0px;
+		top: 0px;
+	}
+	#cease_logo_A0_Component_1 {
+		position: absolute;
+		width: 129px;
+		height: 128px;
+		left: 154px;
+		top: 41px;
+		overflow: visible;
+	}
+	.cease_logo_A0_Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 128px;
+		height: 128px;
+		left: 0px;
+		top: 0px;
+	}
+	#A {
+		position: absolute;
+		left: 323px;
+		top: 77px;
+		overflow: visible;
+		width: 35px;
+		white-space: nowrap;
+		line-height: 59px;
+		margin-top: -7px;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		color: rgba(210,58,90,1);
+	}
+	#A_MORGAN_STATE_UNIVERSITY_SPON {
+		position: absolute;
+		left: 154px;
+		top: 183px;
+		overflow: visible;
+		width: 487px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 17px;
+		color: rgba(255,255,255,1);
+	}
+	#QUICK_LINKS {
+		position: absolute;
+		left: 1038px;
+		top: 9px;
+		overflow: visible;
+		width: 202px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.08px;
+	}
+	#Home_About_Testimonials_Contac {
+		position: absolute;
+		left: 1086px;
+		top: 67px;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		line-height: 37px;
+		margin-top: -8px;
+		text-align: right;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.08px;
+	}
+	#METADATA {
+		display: none;
+		position: absolute;
+		left: 492px;
+		top: 687px;
+		overflow: hidden;
+		width: 21px;
+		height: 28px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+</style>
+</head>
+<body>
+<div id="Home_Page" class="">
+	<svg class="CeaseHome">
+		<pattern elementId="CeaseHome_A0_Rectangle_2" id="CeaseHome_A0_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="CeaseHome_A0_Rectangle_2_pattern.png" xlink:href="CeaseHome_A0_Rectangle_2_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#CeaseHome_A0_Rectangle_2_pattern)" id="CeaseHome" rx="0" ry="0" x="0" y="0" width="1403" height="793">
+		</rect>
+	</svg>
+	<svg class="cease_logo">
+		<pattern elementId="cease_logo_A0_Rectangle_4" id="cease_logo_A0_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="cease_logo_A0_Rectangle_4_pattern.png" xlink:href="cease_logo_A0_Rectangle_4_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#cease_logo_A0_Rectangle_4_pattern)" id="cease_logo" rx="0" ry="0" x="0" y="0" width="136" height="136">
+		</rect>
+	</svg>
+	<div id="HOME_">
+		<span>HOME </span>
+	</div>
+	<div id="ABOUT">
+		<a  style="text-decoration: none" href="about us1.html" target="new">ABOUT</a>
+	</div>
+	<div id="TESTIMONIALS">
+		<a style="text-decoration: none; color: black;" href="" target="new">TESTIMONIALS</a>
+	</div>
+	<div id="FAQ">
+		<span>FAQ</span>
+	</div>
+	<div id="CONTACT_US">
+		<span>CONTACT US</span>
+	</div>
+	<div id="Ready_to_give_up_smoking_">
+		<span>Ready to give up<br/>smoking?</span>
+	</div>
+	<div id="CEASE_Today_can_help_you_get_b">
+		<span>CEASE Today can help you get back in control and break the smoking habit. We are you with the facts and tools you need, help you develop coping skills and offer you support along the way. </span>
+	</div>
+	<svg class="Rectangle_2">
+		<rect fill="rgba(210,58,90,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1400" height="118">
+		</rect>
+	</svg>
+	<div id="Did_you_know__On_average__the_">
+		<span>Did you know:</span><span style="font-style:normal;font-weight:normal;"> On average, the life expectancy of a smoker is 10 years less than a nonsmoker.</span>
+	</div>
+	<div id="Group_1">
+		<svg class="ID2014_11_08_00_57_41_copy">
+			<pattern elementId="ID2014_11_08_00_57_41_copy_A0_Rectangle_7" id="ID2014_11_08_00_57_41_copy_A0_Rectangle_7_pattern" x="0" y="0" width="100%" height="100%">
+				<image x="0" y="0" width="100%" height="100%" href="ID2014_11_08_00_57_41_copy_A0_Rectangle_7_pattern.png" xlink:href="ID2014_11_08_00_57_41_copy_A0_Rectangle_7_pattern.png"></image>
+			</pattern>
+			<rect fill="url(#ID2014_11_08_00_57_41_copy_A0_Rectangle_7_pattern)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="ID2014_11_08_00_57_41_copy" rx="0" ry="0" x="0" y="0" width="1400" height="532">
+			</rect>
+		</svg>
+		<svg class="Rectangle_3">
+			<rect fill="rgba(255,255,255,1)" id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="1400" height="532">
+			</rect>
+		</svg>
+	</div>
+	<div id="We_are_a_community_driven__smo">
+		<span>We are a community driven <br/>smoking cessation initiative<br/>evolved through collaboration…</span>
+	</div>
+	<div id="CEASE__Communities_Engaged_and">
+		<span>CEASE (Communities Engaged and Advocating for a Smoke-free Environment) is a community driven smoking cessation initiative that evolved through collaboration between Morgan State University and Baltimore Communities with a mission to educate encourage, and support individuals to choose a smoke-free lifestyle</span>
+	</div>
+<!--<div id="LEARN_MORE">
+		<span>LEARN MORE</span>
+	</div>-->
+	<svg class="DSC_0209_copy">
+		<pattern elementId="DSC_0209_copy_A0_Rectangle_10" id="DSC_0209_copy_A0_Rectangle_10_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="DSC_0209_copy_A0_Rectangle_10_pattern.png" xlink:href="DSC_0209_copy_A0_Rectangle_10_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#DSC_0209_copy_A0_Rectangle_10_pattern)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="DSC_0209_copy" rx="0" ry="0" x="0" y="0" width="1400" height="339">
+		</rect>
+	</svg>
+	<!--<svg class="Line_1" viewBox="0 0 176 1">
+		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_1" d="M 0 1 L 176 0">
+		</path>
+	</svg>-->
+	<div id="Communities_Engaged_and_Advoca">
+		<span>Communities Engaged and Advocating for a Smoke-free Environment</span>
+	</div>
+	<svg class="cease_logo_A0_Rectangle_11">
+		<pattern elementId="cease_logo_A0_Rectangle_12" id="cease_logo_A0_Rectangle_12_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="cease_logo_A0_Rectangle_12_pattern.png" xlink:href="cease_logo_A0_Rectangle_12_pattern.png"></image>
+		</pattern>
+		<rect fill="url(#cease_logo_A0_Rectangle_12_pattern)" id="cease_logo_A0_Rectangle_11" rx="0" ry="0" x="0" y="0" width="136" height="136">
+		</rect>
+	</svg>
+	<div id="Group_2">
+		<div id="Group_8">
+			<svg class="Ellipse_1">
+				<ellipse fill="rgba(255,255,255,1)" stroke="rgba(210,58,90,1)" stroke-width="9px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_1" rx="163" ry="158" cx="163" cy="158">
+				</ellipse>
+			</svg>
+			<svg class="Icon_material_smoke_free" viewBox="2.712 2.937 190.332 170.537">
+				<path fill="rgba(210,58,90,1)" id="Icon_material_smoke_free" d="M 2.711700439453125 35.67387008666992 L 68.94723510742188 92.77346801757813 L 2.711700439453125 92.77346801757813 L 2.711700439453125 117.1359634399414 L 97.87770843505859 117.1359634399414 L 164.1132354736328 173.4742431640625 L 176.2944793701172 163.5769653320313 L 14.89294815063477 25.01527976989746 L 2.711700439453125 35.67387008666992 Z M 178.5784606933594 92.77346801757813 L 193.0436859130859 92.77346801757813 L 193.0436859130859 117.1359634399414 L 178.5784606933594 117.1359634399414 L 178.5784606933594 92.77346801757813 Z M 154.977294921875 92.77346801757813 L 169.4425201416016 92.77346801757813 L 169.4425201416016 117.1359634399414 L 154.977294921875 117.1359634399414 L 154.977294921875 92.77346801757813 Z M 162.590576171875 26.53793525695801 C 168.4788818359375 21.57529640197754 172.4878387451172 14.30939769744873 172.4878387451172 6.743406772613525 L 158.0226135253906 6.743406772613525 C 158.0226135253906 15.04158782958984 150.1992950439453 21.9699649810791 140.5120697021484 21.9699649810791 L 140.5120697021484 34.15121841430664 C 161.7859802246094 34.15121841430664 178.5784606933594 49.42618560791016 178.5784606933594 67.64965057373047 L 178.5784606933594 84.39886474609375 L 193.0436859130859 84.39886474609375 L 193.0436859130859 67.64965057373047 C 193.0436859130859 49.50754165649414 180.3504638671875 33.77851104736328 162.590576171875 26.53793525695801 Z M 121.4788665771484 57.75238800048828 L 135.944091796875 57.75238800048828 C 145.9162139892578 57.75238800048828 154.977294921875 63.84412384033203 154.977294921875 74.50160217285156 L 154.977294921875 84.39886474609375 L 169.4425201416016 84.39886474609375 L 169.4425201416016 71.45629119873047 C 169.4425201416016 56.81243133544922 153.7040100097656 45.57114028930664 135.944091796875 45.57114028930664 L 121.4788665771484 45.57114028930664 C 111.7916412353516 45.57114028930664 103.9683227539063 37.88143920898438 103.9683227539063 29.5832462310791 C 103.9683227539063 21.28506660461426 111.7916564941406 15.11801528930664 121.4788665771484 15.11801528930664 L 121.4788665771484 2.936767578125 C 103.9088897705078 2.936767578125 89.50308990478516 15.2939510345459 89.50308990478516 30.34457588195801 C 89.50308990478516 45.39519882202148 103.9088897705078 57.75238800048828 121.4788665771484 57.75238800048828 Z M 145.0800323486328 116.3746337890625 L 145.0800323486328 92.77346801757813 L 117.6722259521484 92.77346801757813 L 145.0800323486328 116.3746337890625 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Group_9">
+		<div id="Group_7">
+			<svg class="Ellipse_2">
+				<ellipse fill="rgba(255,255,255,1)" stroke="rgba(210,58,90,1)" stroke-width="9px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_2" rx="163" ry="158" cx="163" cy="158">
+				</ellipse>
+			</svg>
+		</div>
+		<svg class="Icon_awesome_handshake" viewBox="0.399 4.049 192.803 106.56">
+			<path fill="rgba(210,58,90,1)" id="Icon_awesome_handshake" d="M 131.2302856445313 4.048828125 L 105.2171325683594 4.048828125 C 102.8069763183594 4.048828125 100.1087951660156 4.843245506286621 98.331298828125 6.332200527191162 L 69.25778961181641 31.44929695129395 C 69.22766876220703 31.47686767578125 69.28790283203125 31.42171859741211 69.25778961181641 31.44929695129395 C 64.25672912597656 35.75072479248047 64.21467590332031 43.15905380249023 68.49269866943359 47.43290328979492 C 72.31880950927734 51.26558303833008 80.29355621337891 52.30243301391602 85.32472229003906 48.19402694702148 C 85.3548583984375 48.16645431518555 85.29457092285156 47.46048355102539 85.32472229003906 47.43290328979492 L 109.0425872802734 27.6436767578125 C 111.0008163452148 26.0168514251709 114.1509552001953 25.85141181945801 115.9284210205078 27.6436767578125 C 117.7360000610352 29.43593978881836 117.8866729736328 32.07827377319336 115.9284210205078 33.73266983032227 L 108.2774963378906 40.58278656005859 L 151.8877716064453 73.31112670898438 C 152.7614593505859 73.97289276123047 153.4599761962891 74.85002136230469 154.1830596923828 75.59449768066406 L 154.1830596923828 22.3158073425293 L 138.1161041259766 7.093324661254883 C 136.3386383056641 5.438930034637451 133.791015625 4.048828125 131.2302856445313 4.048828125 Z M 164.1292419433594 22.3158073425293 L 164.1292419433594 83.96686553955078 C 164.1292419433594 88.84733581542969 167.9779052734375 92.3392333984375 173.3103485107422 92.3392333984375 L 193.2027587890625 92.3392333984375 L 193.2027587890625 22.3158073425293 L 164.1292419433594 22.3158073425293 Z M 178.666015625 83.96686553955078 C 176.0148010253906 83.96686553955078 173.3103485107422 81.82656860351563 173.3103485107422 79.40012359619141 C 173.3103485107422 76.97367095947266 176.0148010253906 74.8333740234375 178.666015625 74.8333740234375 C 181.3171844482422 74.8333740234375 183.2565612792969 76.97367095947266 183.2565612792969 79.40012359619141 C 183.2565612792969 81.82656860351563 181.3171844482422 83.96686553955078 178.666015625 83.96686553955078 Z M 0.3994750678539276 92.3392333984375 L 19.52678298950195 92.3392333984375 C 24.85923194885254 92.3392333984375 28.7078914642334 88.84732055664063 28.7078914642334 83.96686553955078 L 28.7078914642334 22.3158073425293 L 0.3994750678539276 22.3158073425293 L 0.3994750678539276 92.3392333984375 Z M 14.93622875213623 74.8333740234375 C 17.5873908996582 74.8333740234375 19.52678298950195 76.97367095947266 19.52678298950195 79.40012359619141 C 19.52678298950195 81.82656860351563 17.5873908996582 83.96686553955078 14.93622875213623 83.96686553955078 C 12.28507137298584 83.96686553955078 9.580583572387695 81.82656860351563 9.580583572387695 79.40012359619141 C 9.580583572387695 76.94609832763672 12.28507137298584 74.8333740234375 14.93622875213623 74.8333740234375 Z M 145.7670288085938 80.16124725341797 L 100.626579284668 46.67177963256836 L 92.21056365966797 54.28302001953125 C 83.26287841796875 61.75536727905273 68.82540130615234 60.72944641113281 60.84177017211914 52.76077270507813 C 52.7376594543457 44.65423202514648 53.57490921020508 32.74993515014648 62.37195587158203 25.36030387878418 L 86.85491943359375 4.048828125 L 61.60686111450195 4.048828125 C 59.04607772827148 4.048828125 57.29372787475586 5.438930034637451 55.48612213134766 7.093324661254883 L 38.65409088134766 22.3158073425293 L 38.65409088134766 83.96686553955078 L 44.00973892211914 83.96686553955078 L 71.55306243896484 106.0394668579102 C 79.80784606933594 112.1883010864258 91.61302185058594 111.3111724853516 98.331298828125 103.7560958862305 L 98.331298828125 103.7560958862305 L 103.6869430541992 108.3228378295898 C 108.4771118164063 111.9073638916016 115.8675079345703 111.1847381591797 119.7538833618164 106.8005905151367 L 128.9349975585938 96.14485168457031 L 130.4651947021484 96.90597534179688 C 134.5925903320313 99.96661376953125 140.8927917480469 99.94995880126953 144.2368469238281 96.14485168457031 L 147.2972106933594 92.3392333984375 C 150.6714324951172 88.53411865234375 149.8944244384766 83.24944305419922 145.7670288085938 80.16124725341797 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="Group_10">
+		<svg class="Ellipse_3">
+			<ellipse fill="rgba(255,255,255,1)" stroke="rgba(210,58,90,1)" stroke-width="9px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_3" rx="163" ry="158" cx="163" cy="158">
+			</ellipse>
+		</svg>
+		<svg class="Icon_awesome_chart_line" viewBox="0.375 4.4 170.026 138.98">
+			<path fill="rgba(210,58,90,1)" id="Icon_awesome_chart_line" d="M 164.6856079101563 120.0783081054688 L 21.09263610839844 120.0783081054688 L 21.09263610839844 10.22566604614258 C 21.09263610839844 7.032438278198242 19.02915191650391 4.400146484375 16.09189033508301 4.400146484375 L 5.375994682312012 4.400146484375 C 2.438732862472534 4.400146484375 0.375244140625 7.032438278198242 0.375244140625 10.22566604614258 L 0.375244140625 131.7293395996094 C 0.375244140625 138.1122131347656 5.219937801361084 143.38037109375 11.09113693237305 143.38037109375 L 164.6856079101563 143.38037109375 C 167.6228637695313 143.38037109375 170.4007568359375 140.7480926513672 170.4007568359375 137.5548553466797 L 170.4007568359375 125.9038238525391 C 170.4007568359375 122.7106018066406 167.6228637695313 120.0783081054688 164.6856079101563 120.0783081054688 Z M 153.9696960449219 16.05118370056152 L 115.3925094604492 16.05118370056152 C 108.28857421875 16.05118370056152 104.6534271240234 25.56937408447266 109.6773529052734 31.03108978271484 L 120.3932495117188 42.68212890625 L 96.1038818359375 69.31307220458984 L 71.10012817382813 42.68212890625 C 66.94675445556641 38.16682052612305 60.24794006347656 38.16682052612305 56.09788513183594 42.68212890625 L 33.23731994628906 67.64863586425781 C 31.16063499450684 69.90628814697266 31.16063499450684 72.88093566894531 33.23731994628906 75.13859558105469 L 41.09563827514648 83.46076202392578 C 43.17232131958008 85.71840667724609 46.87728881835938 85.71840667724609 48.95396423339844 83.46076202392578 L 63.95620727539063 66.81642150878906 L 88.24556732177734 93.44736480712891 C 92.39891052246094 97.96269226074219 99.09779357910156 97.96269226074219 103.2478179931641 93.44736480712891 L 135.3955230712891 58.4942512512207 L 146.1113891601563 70.97750091552734 C 151.1352996826172 76.43923187255859 159.6848754882813 72.04276275634766 159.6848754882813 64.31977081298828 L 159.6848754882813 21.87670135498047 C 159.6881561279297 18.68347358703613 156.9069976806641 16.05118370056152 153.9696960449219 16.05118370056152 Z">
+			</path>
+		</svg>
+	</div>
+	<div id="I_WANT_TO_QUIT">
+		<span>I WANT TO QUIT</span>
+	</div>
+	<div id="I_AM_A_MENTOR">
+		<span>I AM A MENTOR</span>
+	</div>
+	<div id="I_AM_A_RESEARCHER">
+		<span>I AM A RESEARCHER</span>
+	</div>
+	<div id="Group_11">
+		<svg class="Rectangle_4">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(210,58,90,1)" stroke-width="10px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="191" height="61">
+			</rect>
+		</svg>
+		<div id="SIGN_UP">
+			<a style="text-decoration: none" href="Sign_Up___1.html">SIGN UP</a>
+		</div>
+	</div>
+	<div id="Group_12">
+		<svg class="Rectangle_4_A0_Rectangle_14">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(210,58,90,1)" stroke-width="10px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4_A0_Rectangle_14" rx="0" ry="0" x="0" y="0" width="191" height="61">
+			</rect>
+		</svg>
+		<div id="SIGN_UP_A0_Text_17">
+			<a style="text-decoration: none" href="Sign_Up___1.html">SIGN UP</a>
+		</div>
+	</div>
+	<div id="Group_13">
+		<svg class="Rectangle_4_A0_Rectangle_15">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(210,58,90,1)" stroke-width="10px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4_A0_Rectangle_15" rx="0" ry="0" x="0" y="0" width="191" height="61">
+			</rect>
+		</svg>
+		<div id="SIGN_UP_A0_Text_18">
+			<a style="text-decoration: none; color: white;" href="Sign_Up___1.html">SIGN UP</a>
+		</div>
+	</div>
+	<div id="Group_14">
+		<svg class="Rectangle_4_A0_Rectangle_16">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(210,58,90,1)" stroke-width="10px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4_A0_Rectangle_16" rx="0" ry="0" x="0" y="0" width="191" height="61">
+			</rect>
+		</svg>
+		<div id="SIGN_UP_A0_Text_19">
+			<a style="text-decoration: none" href="Sign_Up___1.html">SIGN UP</a>
+		</div>
+	</div>
+	<div id="Group_15">
+		<svg class="Rectangle_29">
+			<rect fill="rgba(210,58,90,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_29" rx="0" ry="0" x="0" y="0" width="1400" height="244">
+			</rect>
+		</svg>
+		<div id="cease_logo_A0_Component_1" class="cease_logo">
+			<svg class="cease_logo_A0_Rectangle_18">
+				<pattern elementId="cease_logo_A0_Rectangle_19" id="cease_logo_A0_Rectangle_19_pattern" x="0" y="0" width="100%" height="100%">
+					<image x="0" y="0" width="100%" height="100%" href="cease_logo_A0_Rectangle_19_pattern.png" xlink:href="cease_logo_A0_Rectangle_19_pattern.png"></image>
+				</pattern>
+				<rect fill="url(#cease_logo_A0_Rectangle_19_pattern)" id="cease_logo_A0_Rectangle_18" rx="0" ry="0" x="0" y="0" width="128" height="128">
+				</rect>
+			</svg>
+		</div>
+		<div id="A">
+			<span>A</span>
+		</div>
+		<div id="A_MORGAN_STATE_UNIVERSITY_SPON">
+			<span>A MORGAN STATE UNIVERSITY SPONSORED PROGRAM</span>
+		</div>
+		<div id="QUICK_LINKS">
+			<span>QUICK LINKS</span>
+		</div>
+		<div id="Home_About_Testimonials_Contac">
+			<span>Home<br/>About<br/>Testimonials<br/>Contact Us</span>
+		</div>
+	</div>
+	<div id="METADATA">
+		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Sign In","__plugin":"Mockup","__version":"1.4.11","__lastUpdate":"2021-01-30T23:49:25.220Z"}</span>
+	</div>
+</div>
+</body>
+</html>
