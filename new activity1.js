@@ -11,7 +11,8 @@ function myFunction() {
 
 
 
- var quiztitle = "Is this Item in a Cigarette?";
+ var quiztitle = "What's in a Cigarette?";
+ var quiztitle2 = "Indicate whether or not you think each ingredient is included in a cigarette.";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -27,17 +28,17 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Tolulene is used to manufacture paint.",
+            "explanation"   :   "Tolulene, an ingredient in paint, is also used to make cigarettes.",
         },
 		{
             "question"      :   "Roof Top",
-            "image"         :   "images/Images for the app/roof2.jpg",
+            "image"         :   "roof2.jpg",
             "choices"       :   [
                                     "Yes",
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Tar is used for paving roads and coating roofs.",
+            "explanation"   :   "Tar, which is used in coating roofs, is also used to make cigarettes.",
         },
 		{
             "question"      :   "Batteries",
@@ -47,7 +48,7 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Both lead & Cadmium are found inside of batteries.",
+            "explanation"   :   "Lead & Cadmium, which are found inside of batteries, are also used in cigarettes.",
         },
 		{
             "question"      :   "Rocket",
@@ -57,7 +58,7 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Methanol is the main component in rocket fuel.",
+            "explanation"   :   "Methanol, the main component in rocket fuel, is used to make cigarettes.",
         },
 		{
             "question"      :   "Soap",
@@ -67,17 +68,17 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "No",
-            "explanation"   :   "Most soaps do NOT contain the same toxins as cigarettes.",
+            "explanation"   :   "Soaps are not an ingredient used to make cigarettes.",
         },
 		{
-            "question"      :   "Roads",
-            "image"         :   "roads2.jpg",
+            "question"      :   "Nail Polish Remover",
+            "image"         :   "nail polish remover.png",
             "choices"       :   [
                                     "Yes",
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Acetone is used for paving roads, coating roofs & removing nail polish.",
+            "explanation"   :   "Acetone is used for removing nail polish, and for making cigarettes.",
         },
 		{
             "question"      :   "Lotion",
@@ -87,7 +88,7 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "No",
-            "explanation"   :   "Most Lotions do NOT contain the same toxins as cigarettes.",
+            "explanation"   :   "Lotions are not an ingredient used to make cigarettes.",
         },
 		{
             "question"      :   "Lighter Fluid",
@@ -97,27 +98,27 @@ function myFunction() {
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Butane is used in lighter fluid.",
+            "explanation"   :   "Butane, which is used in lighter fluid,is also used to make cigarettes.",
         },
 		{
-            "question"      :   "Candle wax",
+            "question"      :   "Candles",
             "image"         :   "Candle Wax1.jpg",
             "choices"       :   [
                                     "Yes",
                                     "No"
                                 ],
             "correct"       :   "No",
-            "explanation"   :   "Most candles do NOT contain the same toxins as cigarettes.",
+            "explanation"   :   "Candles are not an ingredient used to make cigarettes.",
         },
         {
-            "question"      :   "Rat poison",
+            "question"      :   "Rat Poison",
             "image"         :   "rat poison2.jpg",
             "choices"       :   [
                                     "Yes",
                                     "No"
                                 ],
             "correct"       :   "Yes",
-            "explanation"   :   "Arsenic is used in rat poison.",
+            "explanation"   :   "Arsenic, which is used in rat poison, is also used to make cigarettes.",
         },
 
     ];
@@ -248,8 +249,9 @@ function myFunction() {
          */
 function init(){
             //add title
-            if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string"){
-                $(document.createElement('h1')).text(quiztitle).appendTo('#frame');
+            if(typeof quiztitle !== "undefined" && $.type(quiztitle) === "string" && typeof quiztitle2 !== "undefined" && $.type(quiztitle2) === "string"){
+                $(document.createElement('h1')).text(quiztitle).css({'font-family':'montserrat'}).appendTo('#frame');
+				$(document.createElement('h4')).text(quiztitle2).css({'font-family':'montserrat'}).appendTo('#frame');
             } else {
                 $(document.createElement('h1')).text("Quiz").appendTo('#frame');
             }

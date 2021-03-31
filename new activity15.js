@@ -10,7 +10,7 @@ function myFunction() {
 
 
 
- var quiztitle = "Is this a myth or fact ?";
+ var quiztitle = "Get the Facts Game";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -26,7 +26,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "NRT can double a smoker's chances of quitting smoking.",
+            "explanation"   :   "NRT can double a smoker's chances of quitting successfully.",
         },
 		{
             "question"      :   "I can't use NRT with any other products to help me quit.",
@@ -36,7 +36,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "NRT products can be used safely together. Some people find using more than one NRT product at a time to be useful to handle withdrawal symptoms and fight off cravings. Talk to your doctor before doing so.",
+            "explanation"   :   "NRT products can be used safely together. Some people find using more than one NRT product to be useful for handling withdrawal symptoms and fighting off cravings. Talk to your doctor before doing so.",
         },
 		{
             "question"      :   "I cannot afford NRT.",
@@ -46,7 +46,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "The cost of NRT is less expensive than the cost of cigarettes in the long run. People often smoke cigarettes for years, whereas NRT is generally used for a limited time.",
+            "explanation"   :   "The cost of NRT is less expensive than the cost of cigarettes in the long run, and some health insurances cover some or all of the cost. People often smoke cigarettes for years, whereas NRT is generally used for a limited time.",
         },
 		{
             "question"      :   "NRT will eliminate my withdrawal symptoms.",
@@ -56,7 +56,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "NRT reduces withdrawal symptoms associated with cigarette smoking such as irritability, frustration, anger, craving, hunger, anxiety, difficulty concentrating, restlessness, and insomnia. However, it may not completely eliminate them",
+            "explanation"   :   "NRT <strong>reduces</strong> withdrawal symptoms such as irritability, frustration, anger, cravings, hunger, anxiety, difficulty concentrating, restlessness, and insomnia. However, it may not completely eliminate them.",
         },
 		{
             "question"      :   "I can still get addicted to NRT, so I would be replacing my tobacco addiction with an NRT addiction.",
@@ -66,27 +66,27 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Fact",
-            "explanation"   :   "The products are different, and the chance of long-term addiction to NRT is very low. NRT provides lower, more controlled doses of nicotine in comparison to cigarettes, and has a much lower risk of addiction than cigarettes.",
+            "explanation"   :   "NRT provides lower, more controlled doses of nicotine in comparison to cigarettes, and has a much lower risk of addiction than cigarettes.",
         },
 		{
-            "question"      :   "NRT is as harmful as cigarettes",
+            "question"      :   "NRT is as harmful as cigarettes.",
             "image"         :   "",
             "choices"       :   [
                                     "Fact",
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "The effect of NRT on the body is not fully known, but NRT products are safer than cigarettes and have few or no side effects. Most of the harm from smoking is from the thousands of chemicals found in cigarettes rather than nicotine. Using NRT instead of cigarettes reduces the exposure to many chemicals found in tobacco smoke.",
+            "explanation"   :   "NRT products do not contain the harmful chemicals found in tobacco products and smoke, so NRT is a safer option with fewer side effects.",
         },
 		{
-            "question"      :   "Only healthy people can use NRT",
+            "question"      :   "Only healthy people can use NRT.",
             "image"         :   "",
             "choices"       :   [
                                     "Fact",
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "Under the direction of the doctor, most people can use NRT. Generally, NRT can be safely used by people with diabetes or high blood pressure and does not increase the risk of heart attacks. People with these conditions should consult with the doctor to determine if NRT is the right choice for them.",
+            "explanation"   :   " Generally, NRT can be safely used by most people. However, people with certain conditions (diabetes or high blood pressure) should consult with their doctor to determine if NRT is the right choice for them.",
         },
 		{
             "question"      :   "I can get NRT without a prescription.",
@@ -106,7 +106,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Myth",
-            "explanation"   :   "It is the tar found in cigarettes that causes the yellowing of teeth and fingernails; not the nicotine",
+            "explanation"   :   "It is the tar found in cigarettes that causes the yellowing of teeth and fingernails; not the nicotine.",
         },
         {
             "question"      :   "NRT products are regulated by the Federal Drug Administration (FDA).",
@@ -116,7 +116,7 @@ function myFunction() {
                                     "Myth"
                                 ],
             "correct"       :   "Fact",
-            "explanation"   :   "FDA-approved NRTs are designed to reduce symptoms of nicotine withdrawal and help adults quit smoking by delivering small amounts of nicotine to the brain without the toxic chemicals present in cigarette smoke.",
+            "explanation"   :   "FDA-approved NRTs are designed to reduce symptoms of nicotine withdrawal and help adults quit smoking.",
         },
 
     ];

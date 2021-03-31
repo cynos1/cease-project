@@ -391,7 +391,8 @@ span:hover {
   width: 400px;
   font-size: 19px;
   color: #c52348;
-  height: 650px;
+  height: 750px;
+  max-height: 1000px;
 }
 
 .side-navigation.fixed{

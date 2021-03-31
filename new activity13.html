@@ -37,19 +37,20 @@
        <aside class="sidebar-area" role="complementary">
             <nav class="side-navigation" role="navigation">
                <ul class="menu">
+				   <h3 style="text-align: center; float: right;">Objective: To understand the need for support and how a Quit Buddy can help.</h3>
 				   <ol><h2>Lesson 4</h2></ol>
                     <li class="menu-item">
-                        <a href="new activity12.html"><i style="color: #89287c;" class="fa fa-arrow-right" aria-hidden="true"></i> Support to quit  <i style="color: green;" class="fa fa-check-circle-o"></i></a>
+                        <a href="new activity12.html"><i style="color: #89287c;" class="fa fa-arrow-right" aria-hidden="true"></i>  How can support be helpful?   <i style="color: green;" class="fa fa-check-circle-o"></i></a>
                     </li><!-- /.menu-item -->
                     
 				   <li class="menu-item">
-                        <a href="new activity14.html"><i style="color:#89287c;" class="fa fa-comments" aria-hidden="true"> </i> Qutting with help <i style="color: green;" class="fa fa-check-circle-o"></i> </a>
+                        <a href="new activity14.html"><i style="color:#89287c;" class="fa fa-comments" aria-hidden="true"> </i> Starting Supportive Conversations <i style="color: green;" class="fa fa-check-circle-o"></i> </a>
                     </li><!-- /.menu-item -->
 				   <li class="menu-item">
-                        <a href="javascript:;"><i style="color: #89287c;" class="fa fa-arrow-right" aria-hidden="true"></i> Choosing your quit buddy <i style="color: green;" class="fa fa-clock-o"></i> </a>
+                        <a href="javascript:;"><i style="color: #89287c;" class="fa fa-arrow-right" aria-hidden="true"></i> Choosing your Quit Buddy <i style="color: green;" class="fa fa-clock-o"></i> </a>
                     </li><!-- /.menu-item -->
 				   <li class="menu-item">
-						<a href="video3.html"> <i style="color:#89287c;" class="fa fa-arrow-left" aria-hidden="true"></i> <strong> Back to lesson 3</strong></a>
+						<a href="video3.html"> <i style="color:#89287c;" class="fa fa-arrow-left" aria-hidden="true"></i> <strong> Back to Lesson 3</strong></a>
                     </li><!-- /.menu-item -->
                </ul><!-- /.menu -->
             </nav><!-- #site-navigation -->
@@ -115,33 +116,12 @@
  <br>
 	<center><a href="new activity14.html"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-left"></i></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	 <a href="javascript:onButtonClick().then(()=>{location.href = 'congratsafterlesson4.html';});"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
+	 <a href="congratsafterlesson4.html"> <i style="font-size:48px; color: #89287c; margin: 0 auto;" class="fa fa-arrow-circle-right"></i></a></center>	
 		
 	</div>
 		</main>
 	</div>
    
-</body><script>
-	function onButtonClick(){
-		const name = document.getElementById('fname').value;
-		const relationship_index = document.getElementById("relationship-type").selectedIndex;
-		const relationship = document.getElementById('relationship-type')[relationship_index].text;
-		return sendAnswerToDatabaseA13(name, relationship).then(()=>{
-			return completeActivityOnDatabaseA13();
-		});
-	}
-	</script>
-	<script src="/__/firebase/8.2.7/firebase-app.js"></script>
-	<!-- Include the core SDK first -->
-	<!-- include only the Firebase features as you need -->
-	<script src="/__/firebase/8.2.7/firebase-auth.js"></script>
-	<script src="/__/firebase/8.2.7/firebase-database.js"></script>
-	<script src="/__/firebase/8.2.7/firebase-firestore.js"></script>
-	<script src="/__/firebase/8.2.7/firebase-functions.js"></script>
-	<script src="/__/firebase/8.2.7/firebase-remote-config.js"></script>
-	<script src="/__/firebase/8.2.7/firebase-analytics.js"></script>
-	<script src="/__/firebase/init.js"></script>
-	<script type = 'text/javascript' src="backend/firebase.js"></script>
-	<script type = 'text/javascript' src="backend/activity.js"></script>
+</body>
 	<script src="new activity13.js"></script>
 </html>

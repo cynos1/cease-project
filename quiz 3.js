@@ -9,7 +9,7 @@ function myFunction() {
 }
 
 
-var quiztitle = "QUIZ 3";
+var quiztitle = "LESSON 3 QUIZ";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -30,11 +30,11 @@ var quiztitle = "QUIZ 3";
             "explanation"   :   "",
         },
         {
-            "question"      :   "The stages of behavior change includes which of the following stages?",
+            "question"      :   "The Stages of Behavior Change includes which of the following:",
             "image"         :   "",
             "choices"       :   [
                                     "Contemplation.",
-                                    "Pre-consideration.",
+                                    "Pre-Consideration.",
 									"Mentoring.",
 									"Relapsing.",
 									"Desiring."
@@ -43,40 +43,40 @@ var quiztitle = "QUIZ 3";
             "explanation"   :   "",
         },
 		{
-            "question"      :   "The stages of behavior change includes all of the following stages EXCEPT",
+            "question"      :   "The Stages of Behavior Change includes all of the following EXCEPT:",
             "image"         :   "",
             "choices"       :   [
-                                    "Pre-contemplation.",
-                                    "Post-consideration.",
+                                    "Pre-Contemplation.",
+                                    "Post-Consideration.",
 									"Preparation.",
 									"Action.",
 									"Maintenance."
                                 ],
-            "correct"       :   "Post-consideration.",
+            "correct"       :   "Post-Consideration.",
             "explanation"   :   "",
         },
 		{
-            "question"      :   "Which of the following is false about behavior change to quit smoking?",
+            "question"      :   "Which of the following statements is FALSE?",
             "image"         :   "",
             "choices"       :   [
-                                    "Pre-contemplation: The smoker is seriously thinking about quitting.",
+                                    "Pre-Contemplation: The smoker is seriously thinking about quitting.",
                                     "Contemplation: The smoker thinks about it but is not serious.",
 									"Preparation: The smoker has a plan and plans to quit next month.",
 									"Action: The first six months when the smoker is actively quitting.",
 									"Maintenance: The period when the ex-smoker takes steps to avoid relapse."
                                 ],
-            "correct"       :   "Pre-contemplation: The smoker is seriously thinking about quitting.",
+            "correct"       :   "Pre-Contemplation: The smoker is seriously thinking about quitting.",
             "explanation"   :   "",
         },
         {
-            "question"      :   "Which of the following statements is true about behavior change for quitting smoking?",
+            "question"      :   "Which of the following statements is TRUE?",
             "image"         :   "",
             "choices"       :   [
                                     "It is not common to have mixed emotions about your desire to quit smoking.",
                                     "There will never be a time when you wonder if you made the right decision.",
 									"Remembering your motivations to quit will not help you handle your mixed feelings about quitting.",
 									"There may be times when the idea of quitting has no appeal.",
-									"Thinking about Living a healthier life will not motivate you to quit smoking."
+									"Thinking about living a healthier life will not motivate you to quit smoking."
                                 ],
             "correct"       :   "There may be times when the idea of quitting has no appeal.",
             "explanation"   :   "",
@@ -127,12 +127,13 @@ var currentquestion = 0,
      }
 
 
-     function processQuestion(choice) {
+     
+      function processQuestion(choice) {
          if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
              $('.choice').eq(choice).css({
                  'background-color': '#50D943'
              });
-             $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
+             $('#explanation').html('<strong><center>Correct!</center></strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
              score++;
          } else {
              $('.choice').eq(choice).css({
@@ -143,16 +144,12 @@ var currentquestion = 0,
          currentquestion++;
          $('#submitbutton').html('Submit &raquo;').on('click', function () {
              if (currentquestion == quiz.length) {
-                sendAnswerToDatabaseQ3(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    endQuiz();   
-                });
+                 endQuiz();
              } else {
                  $(this).text('Check Answer').css({
                      'color': '#222'
                  }).off('click');
-                 sendAnswerToDatabaseQ3(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    nextQuestion();
-                 });
+                 nextQuestion();
              }
          })
      }

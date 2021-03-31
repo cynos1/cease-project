@@ -2,7 +2,7 @@
 /* CSS Document */
 body {
   margin: 0;
-  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family: montserrat;
   
 
  
@@ -172,16 +172,17 @@ ul {
 	box-shadow: 1px 2px 4px;
 }
 .bubble.menu.active ~ .bubble:nth-of-type(2) {/*stress relief*/
-  transform: translate(160px, 70px);
+  transform: translate(120px, 110px);
+	transition-delay: 0.1s;
 	box-shadow: 1px 2px 4px;
 }
 .bubble.menu.active ~ .bubble:nth-of-type(3) {/*enjoyment*/
-  transform: translate(50px, 150px);
+  transform: translate(-50px, 170px);
   transition-delay: 0.2s;
 	box-shadow: 1px 2px 4px
 }
 .bubble.menu.active ~ .bubble:nth-of-type(4) {/*focus*/
-  transform: translate(180px, -60px);
+  transform: translate(160px, -60px);
   transition-delay: 0.4s;
 	box-shadow: 1px 2px 4px;
 }
@@ -191,12 +192,12 @@ ul {
 	box-shadow: 1px 2px 5px;
 }
 .bubble.menu.active ~ .bubble:nth-of-type(6) {/*routine*/
-  transform: translate(120px, -160px);
+  transform: translate(-10px, -160px);
   transition-delay: 0.4s;
 	box-shadow: 1px 2px 4px;
 }
 .bubble.menu.active ~ .bubble:nth-of-type(7) {/*friends*/
-  transform: translate(-210px, -60px);
+  transform: translate(-190px, -80px);
   transition-delay: 0.4s;
 	box-shadow: 1px 2px 4px;
 }

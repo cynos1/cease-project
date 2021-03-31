@@ -4,62 +4,62 @@ var anaconfig = {
   },
   "ana1":{//full-face
 //info of the popup
-    "url": "https://www.humananatomyillustrations.com/",//link to any webpage
+    "url": "",//link to any webpage
     "target": "same_window",// use "new_window", "same_window", "modal" with bootstrap only, or "none"
-    "enabled": true//true/false to activate/deactivate
+    "enabled": false//true/false to activate/deactivate
   },
   "ana2":{//forehead
     "hover": "",
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana3":{//eye-rt
     "hover": "",
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana4":{//eye-lt
     "hover": "",
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana5":{//nose
     "hover": "",
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana6":{//mouth
     "hover": "",
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana7":{//ear-rt
    /* "hover": "",*/
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana8":{//ear-lt
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana9":{//cheek-rt
   
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana10":{//cheek-lt
     
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana11":{//chin
     
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   },
   "ana12":{//neck
     
-    "url": "https://www.humananatomyillustrations.com/", "target": "same_window",
-    "enabled": true
+    "url": "", "target": "same_window",
+    "enabled": false
   }
 };

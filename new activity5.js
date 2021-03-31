@@ -26,25 +26,25 @@ window.onload=function(){
 		},{
 			index:2, text:"Water Contamination"
 		},{
-			index:3, text:"Dangers to wildlife" 
+			index:3, text:"Dangers to Wildlife" 
 		},{
-			index:4, text:"Smoking-related fires"
+			index:4, text:"Smoking-Related Fires"
 		},{
-			index:5, text:"Destroying forests and trees"
+			index:5, text:"Destroying Forests"
 		},],
 		
 		definitions:[{
-			index:0, text:"Secondhand smoke released into the air contains over 7000 compounds which are toxic and cause over 70 cancers."
+			index:0, text:"Secondhand smoke released into the air contains over 7000 toxic compounds, that can cause over 70 cancers."
 		},{
-			index:1, text:"Many harmful chemicals are released into the ground from discarded cigarette butts"
+			index:1, text:"Many harmful chemicals are released into the ground from discarded cigarette butts."
 		},{
-			index:2, text:"These pollutants reach drinking water reserviors and can pose a significant health hazard"
+			index:2, text:"Cigarettes pollute drinking water reserviors posing a significant health hazard."
 		},{
-			index:3, text:"Scientists have found cigarrette butts in the stomachs of hundreds of animal species"
+			index:3, text:"Cigarrette butts are found in the stomachs of hundreds of animal species."
 		},{
-			index:4, text:"Loss of property and thousands of lives each year."
+			index:4, text:"Each year, properties are damaged, and thousands of lives are lost."
 		},{
-			index:5, text:"Trees are cut down in order to farm and process tobacco crops"
+			index:5, text:"Trees are cut down and replaced by tobacco farms and manufacturing plants."
 		},],
 		
 		pairs:{

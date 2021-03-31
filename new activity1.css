@@ -3,7 +3,8 @@
 /* CSS Document */
 body{
 	background-color: #fff;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: Montserrat;
+	font-style: normal;
 	margin:0;
 }
 main{
@@ -44,7 +45,7 @@ strong
 #frame
 {
 	max-width:620px;
-	max-height: 700px
+	max-height: 700px;
 	width:auto;
 	border:3px solid;
 	background:#fff;
@@ -62,7 +63,7 @@ h1
 }
 h2
 {
-	font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:italic bold 1.3em/1.2em "Montserrat";
 	padding:0;
 	text-align:center;
 	margin:20px 0;
@@ -70,7 +71,7 @@ h2
 p.pager
 {
 	margin:5px 0 5px; 
-	font:bold 1em/1em  "Linotype Praxis Next Cn Black";
+	font:bold 1em/1em ;
 	color:#999;
 }
         img.question-image
@@ -204,7 +205,8 @@ p.pager
    text-align: center;
 }
 .lesson1{
-	font-family: parkside, cursive;
+	font-family: montserrat;
+	
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

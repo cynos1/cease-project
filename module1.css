@@ -105,6 +105,9 @@ ul, #myUL {
 #myUL {
   margin: 0 auto;
   padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: lighter;
 	
 }
 

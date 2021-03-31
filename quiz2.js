@@ -18,7 +18,7 @@ $(document).ready(function() {
 });
 
 
-var quiztitle = "QUIZ 2";
+var quiztitle = "LESSON 2 QUIZ";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -27,11 +27,11 @@ var quiztitle = "QUIZ 2";
     */
     var quiz = [
         {
-            "question"      :   "Barriers to quitting may be",
+            "question"      :   "Barriers to quitting may include",
             "choices"       :   [
                                     "Physical.",
                                     "Emotional.",
-									"Behavioural.",
+									"Behavioral.",
 									"All of the above.",
 									"None of the above."
                                 ],
@@ -52,12 +52,12 @@ var quiztitle = "QUIZ 2";
             "explanation"   :   "",
         },
 		{
-            "question"      :   "Managing cravings involves",
+            "question"      :   "Which of the following can help you manage your cravings?",
             "image"         :   "",
             "choices"       :   [
                                     "Knowing your triggers and when they occur.",
                                     "Avoiding daily activities such as eating, drinking and socializing.",
-									"Not mindful of situations and times of the day that make you want to smoke.",
+									"Not being mindful of situations that make you want to smoke.",
 									"Socializing with friends who smoke.",
 									"Focusing your thoughts on your cravings."
                                 ],
@@ -65,14 +65,14 @@ var quiztitle = "QUIZ 2";
             "explanation"   :   "",
         },
 		{
-            "question"      :   "Choose the accurate statement below:",
+            "question"      :   "Which of the following statements is TRUE?",
             "image"         :   "",
             "choices"       :   [
                                     "Coffee and alcohol may be triggers for smoking.",
-                                    "Triggers cannot be tied to activities such as working, driving, or studying.",
-									"Smoking is addictive but is not tied with your everyday life.",
-									"It is easy to change a behaviour that is associated with your daily activities.",
-									"Triggers can only occur at certain times of the day and not others."
+                                    "Activities such as working, driving, or studying are not triggering.",
+									"Smoking addiction does not affect your everyday life.",
+									"It is easy to change your behaviors.",
+									"Triggers can only occur at certain times of the day."
                                 ],
             "correct"       :   "Coffee and alcohol may be triggers for smoking.",
             "explanation"   :   "",
@@ -135,7 +135,7 @@ var currentquestion = 0,
      }
 
 
-     function processQuestion(choice) {
+      function processQuestion(choice) {
          if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
              $('.choice').eq(choice).css({
                  'background-color': '#50D943'
@@ -151,16 +151,12 @@ var currentquestion = 0,
          currentquestion++;
          $('#submitbutton').html('Submit &raquo;').on('click', function () {
              if (currentquestion == quiz.length) {
-                sendAnswerToDatabaseQ2(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    endQuiz();   
-                });
+                 endQuiz();
              } else {
                  $(this).text('Check Answer').css({
                      'color': '#222'
                  }).off('click');
-                 sendAnswerToDatabaseQ2(currentquestion-1, quiz[currentquestion-1]['choices'][choice]).then(()=>{
-                    nextQuestion();
-                 });
+                 nextQuestion();
              }
          })
      }

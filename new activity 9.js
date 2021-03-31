@@ -10,32 +10,32 @@ function myFunction() {
 let cards = [
   {
     front: "Cancer",
-    back: "Smoking can cause lung cancer, but it is also a risk factor for many other kinds of cancer, including cancer of the mouth,voice box(larynx), throat(pharnyx),esophagus,bladder,kidney,cervix,stomach and some blood cancers (leukemias)."
+    back: "Smoking increases risk for lung, mouth, voice box(larynx), throat(pharnyx), esophagus, bladder, kidney, cervix, stomach, and some blood cancers (leukemias)."
   },
   {
     front: "Lung Disease",
-    back: "Smoking can cause pneumonia,chronic bronchitis and emphysema,diseases that are grouped together as Chronic Obstructive Pulmonary Disease(COPD).COPD can lead to long-lasting illness, disability, and death."
+    back: "Smoking can cause pneumonia, chronic bronchitis, emphysema, which are all Chronic Obstructive Pulmonary Diseases (COPD), that can lead to long-lasting illness, disability, and death."
 	
   },
   {
-    front: "Heart attacks, strokes, and blood vessel disease",
+    front: "Heart attacks, and strokes",
     back: "Smokers are twice as likely to die from heart disease as non-smokers. Smoking can weaken the walls of vessels that carry blood to the brain which can cause strokes. Blood vessel disease can contribute to erectile dysfunction in men."
   },
   {
 	front:"Blindness",
-	back:"Smoking can cause macular degeneration ,an eye disease which is a common cause of blindness in older people."
+	back:"Smoking can cause macular degeneration, an eye disease that can cause blindness."
   },
   {
 	front:"Premature Aging",
-	back:"Smoking causes skin wrinkling, bad breath, yellowing of finger nails, and other noticeable conditions of premature ageing."
+	back:"Smoking causes skin wrinkling, yellowing of finger nails, and other signs of premature aging."
   },
   {
-	front:"Risks to women and babies",
-	back:"Women over 35 who smoke and use birth control are at a higher risk for heart attack,stroke, and blood clots of the leg. They are more likely to miscarry and have low birthweight babies."  
+	front:"Risks to Women and Babies",
+	back:"Women over 35 who smoke and use birth control are at a higher risk for heart attack, stroke, and blood clots of the leg. Miscarriages and low birthweight are also more likely."  
   },
   {
-	front:"Years of life lost",
-	back:"Males lose an average of 13.2 years of their life, and females lose 14.5 years due to smoking."
+	front:"Years of Life Lost",
+	back:"On average, males lose 13.2 and females lose 14.5 years of their life due to smoking."
   }
  
 ];

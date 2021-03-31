@@ -16,7 +16,7 @@ $(document).ready(function() {
     blink();
 });
 
-var quiztitle = "QUIZ 1";
+var quiztitle = "LESSON 1 QUIZ ";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -25,11 +25,12 @@ var quiztitle = "QUIZ 1";
     */
     var quiz = [
         {
-            "question"      :   "Harmful chemicals are found in which of these process steps of tobacco products?",
+            "question"      :   "In the tobacco production process, which of the following steps produce harmful chemicals?",
             "choices"       :   [
-                                    "Growing of tobacco plant.",
-                                    "Manufacturing the tobacco product.",			                    "Lighting up the cigarette.",
-									"Using the tobacco product.",
+                                    "Growing the tobacco plant.",
+                                    "Manufacturing the cigarette.",			                   
+		"Lighting the cigarette.",
+									"Smoking the cigarette.",
 									"All of the above."
                                 ],
             "correct"       :   "All of the above.",
@@ -39,26 +40,25 @@ var quiztitle = "QUIZ 1";
             "question"      :   "Which of the following statements is TRUE about growing tobacco?",
             "image"         :   "",
             "choices"       :   [
-                                    "It contains nicotine which is highly addictive, changes the brain, and causes cravings.",
+                                    "The tobacco plant contains nicotine which is highly addictive, changes the brain, and causes cravings.",
                                     "Heavy metals are not found in the soil where tobacco is grown.",
-									"Fertilizers contain nitrates which cannot enter the tobacco.",
-									"Natural, organic or addictive-free cigarettes are safer alternatives to traditional cigarretttes.",
-									"Harmful chemicals that build up in the growing plant do not escape when you light up."
+									"Fertilizers contain nitrates which cannot enter the tobacco plant.",
+									"Harmful chemicals that build up while the plant is growing do not escape when you light up."
                                 ],
-            "correct"       :   "It contains nicotine which is highly addictive, changes the brain, and causes cravings.",
+            "correct"       :   "The tobacco plant contains nicotine which is highly addictive, changes the brain, and causes cravings.",
             "explanation"   :   "",
         },
 		{
-            "question"      :   "Identify the error below: The tobacco manufacturing progress uses dangerous chemicals to",
+            "question"      :   "All of the following are true about using dangerous chemicals in the tobacco manufacturing process, EXCEPT:",
             "image"         :   "",
             "choices"       :   [
-                                    "Control moisture in cigarettes.",
-                                    "Promote health through cigarettes.",
-									"Enhance flavour of cigarettes.",
-									"Reduce harshness of cigarettes.",
-									"Increase addiction to cigarettes."
+                                    "Controlling moisture in cigarettes.",
+                                    "Promoting health by using cigarettes.",
+									"Enhancing flavour of cigarettes.",
+									"Reducing harshness of cigarettes.",
+									"Increasing addiction to cigarettes."
                                 ],
-            "correct"       :   "Promote health through cigarettes.",
+            "correct"       :   "Promoting health by using cigarettes.",
             "explanation"   :   "",
         },
 		{
@@ -68,14 +68,14 @@ var quiztitle = "QUIZ 1";
                                     "Burning a cigarette produces new harmful chemicals not found in prior processing stages.",
                                     "Inhaling carbon monoxide can lead to heart damage.",
 									"Lighting up a cigarette can release chemicals harmful to the reproductive system.",
-									"Most chemicals released during cigarette lighting are non-cancer causing.",
+									"Most chemicals released during cigarette lighting do not cause cancer.",
 									"It is possible to reverse the lung damage caused by chemicals released by a lit cigarette."
                                 ],
-            "correct"       :   "Most chemicals released during cigarette lighting are non-cancer causing.",
+            "correct"       :   "Most chemicals released during cigarette lighting do not cause cancer.",
             "explanation"   :   "",
         },
         {
-            "question"      :   "Which of the following chemicals is NOT found in cigarettes?",
+            "question"      :   "Which of the following chemicals are NOT found in cigarettes?",
             "image"         :   "",
             "choices"       :   [
                                     "Acetone: found in nail polish remover.",
