@@ -1,4 +1,4 @@
-<<<<<<< HEAD:new activity 9.js
+
  // JavaScript Document
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -8,7 +8,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-let cards = [
+ let cards = [
   {
     front: "Cancer",
     back: "Smoking increases risk for lung, mouth, voice box(larynx), throat(pharnyx), esophagus, bladder, kidney, cervix, stomach, and some blood cancers (leukemias)."

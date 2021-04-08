@@ -10,7 +10,6 @@ function myFunction() {
 function next(){
 	location.replace("drag and drop.html")
 }
-
 const CARD_PEN_OFFSET = 10, //displacement of the cards
       CARD_SWITCH_RANGE = '130%';
 

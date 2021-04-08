@@ -147,9 +147,9 @@ function myfunction2() {
 }
 
 
-function repeat(){
+/*function repeat(){
 	location.replace("activity6.1.html")
-}
+}*/
 
 function continues(){
 	location.replace("realquit.html")

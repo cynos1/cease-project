@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family: montserrat, sans-serif;
   background-color:#FFF;
   overflow-x: hidden;
 }
@@ -127,7 +127,7 @@ h1 {
 .cookie {
   height: 20vh;
   width: 20vh;
-  margin: 10px auto;
+  margin: 0px auto;
   text-align: center;
   vertical-align: middle;
   
@@ -172,8 +172,9 @@ filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
     border-radius: 44% 30% / 50% 50%;
 }
 .rectangle{
-  width: 300px;
-  height:35px;
+  width: 310px;
+  height:42px;
+	vertical-align: middle;
   padding: 5px;
   color:#c52348;
   border: 1px solid black;
@@ -191,7 +192,7 @@ filter: drop-shadow(0 -5px 10px rgba(0,0,0,0.5));
 .notcookie{
   height: 20vh;
   width:20vh;
-  margin:auto;
+  margin:0 auto;
   vertical-align: middle;
   
 }

@@ -2,7 +2,7 @@
 /* CSS Document */
 body{
 	background-color: #fff;
-	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family:montserrat, sans-serif;
 	margin: 0px;
 }
 main{
@@ -52,7 +52,7 @@ strong
 }
 h1
 {
-	font:normal bold 2em/1.8em "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font:normal bold 2em/1.8em Montserrat, sans-serif;
 	text-align:center;
 	border-bottom:1px solid #999;
 	padding:0;
@@ -60,7 +60,7 @@ h1
 }
 h2
 {
-	font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:italic bold 1.3em/1.2em montserrat, sans-serif;
 	padding:0;
 	text-align:center;
 	margin:20px 0;
@@ -68,7 +68,7 @@ h2
 p.pager
 {
 	margin:5px 0 5px; 
-	font:bold 1em/1em  "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font:bold 1em/1em  montserrat, sans-serif;
 	color:#999;
 }
         img.question-image

@@ -2,7 +2,7 @@
 /* CSS Document */
 body {
   margin: 0;
-  font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-family:montserrat, sans-serif;
 }
 
 .topnav {
@@ -325,8 +325,8 @@ time {
   width: 400px;
   font-size: 19px;
   color: #c52348;
-  height: 500px;
-  max-height: 600px;
+  height: 700px;
+  max-height: 1000px;
 }
 
 .side-navigation.fixed{
